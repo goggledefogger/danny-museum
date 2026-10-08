@@ -10,3 +10,7 @@ What that needs, in order:
 2. Wings stay data (they already are in `data/projects.json`), so Travels or Podcasts is a new row plus a per-wing theme override, not new code.
 3. Two catalogue layers: the public `data/projects.json` and a local-only private file that merges in when served from this machine. Recordings of other people, travel and family photos live in the private layer unless Danny says otherwise.
 4. Hosting: YouTube by id (nothing to host), audio and photos as links or small thumbnails; the repo stays light for Pages.
+
+## Voice of the signs (Danny, 2026-10-07)
+
+No ego on the signs. The copy is about the things and the visitor, never the maker: wonder, generosity, selflessness, shown rather than said. Nothing cheesy. "Someone built all this" was retired for "Nothing was thrown away" for this reason.
