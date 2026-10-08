@@ -1,0 +1,72 @@
+# Changelog
+
+## 2026-10-07
+
+- Added: Microsoft Internship: Windows Desktop Search (work, 2006) - Summer 2006 in Redmond as a C++ and COM developer on Windows Desktop Search, the year before joining full time.
+- Added: MicropaymentsGS (work, ~2018-2021) - A mobile Bluetooth payments app delivered as a DevelopmentNow project.
+- Added: Amazon.com Launch Event (Echo and Ring) (work, 2020) - The Fall 2020 Amazon.com launch event for Echo and Ring products, run as a DevelopmentNow project.
+- Added: WARN Industries (work, ~2018-2021) - Bluetooth hardware control, delivered as a DevelopmentNow project.
+- Added: ReadiCheck (work, ~2018-2021) - An app for AED (defibrillator) inspections, delivered as a DevelopmentNow project.
+- Added: Rigado (work, ~2018-2021) - IoT smart-spaces work for Rigado, delivered as a DevelopmentNow project.
+- Added: PortaConX (work, ~2018-2021) - IoT sensor work delivered as a DevelopmentNow project.
+- Added: Regeneron (work, ~2018-2021) - Medical websites built for Regeneron as a DevelopmentNow project.
+- Added: Bright Line Eating (work, ~2018-2021) - A mindfulness platform delivered as a DevelopmentNow project.
+- Added: Project Playbook (work, ~2021-2026) - A playbook for mission-aligned agile project management, co-authored at Development Seed.
+- Added: Hiring Playbook (work, ~2021-2026) - An end-to-end hiring playbook from application review through the final interview, written while Danny grew the team.
+- Added: 360 Review and Leveling Framework (work, ~2021-2026) - A comprehensive 360 annual review with a growth and leveling framework, built at Development Seed.
+- Added: LifeBot (home, 2026) - A personal second brain for household life, with sensitivity-tiered access for the agents that read it.
+- Added: Yogabot (home, 2026) - A Hermes agent deployed on Linode, one of two production agents Danny runs.
+- Added: work-assistant (side, ~2025) - A consumer AI tool listed in the portfolio catalog.
+- Added: aurora-game (side, ~2025) - An AI-assisted game from the portfolio catalog.
+- Added: space-elevator (side, ~2025) - An AI-assisted creative experiment from the portfolio catalog.
+- Added: doodles (side, ~2025) - A small AI-assisted creative experiment from the portfolio catalog.
+- Added: 3D Rotatable Satellite Visualization with Filters (side, ~2025) - A 3D satellite viewer with filters, listed in the portfolio catalog next to the later bmad-satellite-viz-2.
+- Added: todo-plus-plus (side, ~2024-2026) - A personal utility listed in the portfolio catalog.
+- Added: share-links (the original) (side, ~2024) - A link-sharing utility, the sibling of react-share-links.
+- Added: certify (side, 2025) - The first attempt at a certification app, started in February 2025 and later reborn as Seal of Approval.
+- Added: apc-ai-course-vault (brain, ~2025-2026) - The vault behind the AI builders course materials.
+- Added: will-smith-collab-vault (brain, ~2026) - A collaboration vault listed under the AI/agent-tooling family in the portfolio catalog.
+- Added: DevNow-Obsidian (brain, ~2026) - An Obsidian vault for DevelopmentNow work, from the portfolio catalog.
+- Added: 3d-printing-vault (brain, ~2026) - A second-brain vault for 3D printing, from the portfolio catalog.
+- Added: marvin-template (brain, ~2026) - A reusable Marvin agent template, parent of raspberry-marvin in the portfolio catalog's agent tooling family.
+- Added: Roaring Mouse (work, ~2013-2026) - Web work for a kids arts classes business.
+- Added: 50+ AI-assisted projects on GitHub (side, 2024-2026) - A body of more than fifty AI-assisted projects built since April 2024 and published on github.com/goggledefogger.
+
+## 2026-10-07 corrections and enrichments
+
+- ai-at-devseed: enriched
+- appnexus: corr:facts, corr:years, enriched
+- astrolabe-apc: corr:summary, enriched
+- astrolabe-dashboard: enriched
+- audio-visual-experience: enriched
+- captains-orders: enriched
+- chatterbox-test: enriched
+- claude-skills: enriched
+- common-tater: corr:facts, corr:role
+- cutting-edge-digital-artists: enriched
+- datamago: corr:facts, corr:role, enriched
+- development-seed: corr:facts, corr:role, enriched
+- development-seed-mentorship-program: corr:facts
+- devnow: corr:name, corr:role, corr:years, enriched
+- global-green-energy: enriched
+- google-cloud-media: corr:facts, corr:role, enriched
+- granola-helper: enriched
+- ilene-safyan-website: enriched
+- isatrainblocking11th: enriched
+- makahiki-challenge: enriched
+- microsoft-xbox-zune: corr:facts, corr:role, corr:years, enriched
+- mirakoli: enriched
+- mt-hood-meadows-sound: corr:role
+- roy-chief-of-staff: enriched
+- roy-town-llc: corr:role, corr:summary
+- saw-horse-pro: enriched
+- sheila-house-hub: enriched
+- sibling-secret-santa: enriched
+- sole-financial: enriched
+- stanford-online: corr:role, enriched
+- stanford-university: corr:role
+- stoplight-tool: enriched
+- tech-town-show: enriched
+- the-exchange-pdx: enriched
+- town-technology: corr:role, enriched
+- webcam-gpt-vision: enriched

@@ -1,0 +1,21 @@
+__pycache__/
+.playwright-mcp/
+*.pyc
+data/.backups/
+data/mcp-audit.log
+data/.mcp.lock
+data/.projects-*.tmp
+.DS_Store
+.pytest_cache/
+# private scout inputs and build artifacts (kept outside the repo)
+data/raw-*.json
+data/*.merged.json
+data/CHANGES-*.md
+# processed incoming drafts carry raw-source detail
+data/incoming/done/*
+!data/incoming/done/.gitkeep
+# MCP backups and audit log, anywhere
+.backups/
+backups/
+*.audit.log
+mcp-audit.log

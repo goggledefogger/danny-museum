@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danny's Museum</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%23f6c56f%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="src/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="hud">
+  <div id="crosshair"></div>
+  <div id="corner">
+    <div id="location" data-copy="lobbyName"></div>
+    <div id="passport"></div>
+    <div class="bar"><div id="passport-bar"></div></div>
+    <div id="since" class="hidden" role="button" tabindex="0" data-copy-title="sinceTitle"></div>
+  </div>
+  <canvas id="minimap"></canvas>
+  <aside id="exhibit" class="panel hidden"></aside>
+  <div id="prompt" class="hidden"></div>
+  <div id="surprise" class="hidden"></div>
+  <div id="toast"></div>
+  <div id="tour-banner" class="hidden" data-copy-html="tourBanner"></div>
+  <div id="flash"></div>
+  <div id="picker" class="hidden" role="dialog" aria-labelledby="picker-title">
+    <div class="card">
+      <div class="eyebrow" data-copy="pickerEyebrow"></div>
+      <h1 id="picker-title" data-copy="pickerTitle"></h1>
+      <p class="lede" data-copy="pickerLede"></p>
+      <ul class="themes" role="listbox" aria-labelledby="picker-title"></ul>
+      <div class="fine" data-copy="pickerHint"></div>
+    </div>
+  </div>
+  <div id="overlay" class="hidden">
+    <div class="card">
+      <div class="eyebrow" data-copy="overlayEyebrow"></div>
+      <h1 id="overlay-title" data-copy="overlayTitle"></h1>
+      <p class="lede" data-copy="overlayLede"></p>
+      <ul class="controls" data-copy-html="overlayControls"></ul>
+      <div class="buttons">
+        <button id="btn-start" data-copy="overlayStart"></button>
+        <button id="btn-tour" class="ghost" data-copy="overlayTour"></button>
+      </div>
+      <div id="loading" class="fine" data-copy="loading"></div>
+    </div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

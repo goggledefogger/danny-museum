@@ -1,0 +1,15 @@
+{
+  "default": "funhouse",
+  "themes": [
+    {
+      "id": "funhouse",
+      "name": "Funhouse",
+      "blurb": "Neon, after midnight. There is a lever."
+    },
+    {
+      "id": "orbital-paper",
+      "name": "Paper Orbit",
+      "blurb": "Cardstock and brass in low orbit. The window faces home."
+    }
+  ]
+}

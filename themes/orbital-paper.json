@@ -1,0 +1,456 @@
+{
+  "id": "orbital-paper",
+  "name": "The Orbital Paper Museum",
+  "blurb": "A paper-craft natural history museum aboard a space station: cardstock, brass, hand-lettered labels and the Earth out the window.",
+  "default": {
+    "palette": {
+      "sky": "#05060c",
+      "skyCycle": false,
+      "ceiling": "#c9a24e",
+      "fog": {
+        "color": "#e8dcc0",
+        "near": 30,
+        "far": 140
+      },
+      "floor": "#b8956a",
+      "floorLine": "rgba(80,55,30,0.18)",
+      "floorTint": 0.82,
+      "wall": "#efe4c9",
+      "wingWallBase": "#e6d8b8",
+      "wingWallTint": 0.12,
+      "annexWall": "#efe4c9",
+      "annexFloor": "#bf9d70",
+      "trim": "#a8742a",
+      "accent": "#a8742a",
+      "regionDefault": "#a8742a",
+      "unknownWing": "#8a7a66",
+      "pillar": "#d8c7a3",
+      "pedestal": "#b48c5e",
+      "post": "#8f6324",
+      "window": "#fff2b0",
+      "signBg": "#f7efdc",
+      "signInk": "#2a2018",
+      "signSoft": "#4a3c2c",
+      "wingInk": "#2a2018",
+      "titleInk": "#2a2018",
+      "titleGlow": "rgba(0,0,0,0)",
+      "quietBorder": "#a8742a",
+      "quietInk": "#4a3c2c",
+      "caseGlass": "#e8f4ff",
+      "caseGlassOpacity": 0.16,
+      "caseFrame": "#b8862f",
+      "mirror": "#d9d6cf",
+      "mirrorInk": "#4a3c2c",
+      "mirrorLight": "#fff1d6",
+      "light": {
+        "color": "#fff6ea",
+        "intensity": 35
+      },
+      "ambient": {
+        "color": "#fff6e4",
+        "intensity": 0.35
+      },
+      "hemi": {
+        "sky": "#f4efe6",
+        "ground": "#6a5238",
+        "intensity": 0.75
+      },
+      "hallLight": {
+        "mix": "#fff6ea",
+        "intensity": 18
+      },
+      "spot": "#fff1d6",
+      "spotFill": "#ffe8c0",
+      "spotPool": "#e8c98a",
+      "sparkle": "#ffe8b0",
+      "freshHalo": "#e8c070",
+      "ribbon": {
+        "top": "#f3d48a",
+        "mid": "#c9a24e",
+        "bottom": "#8f6324",
+        "edge": "#5a3c12",
+        "ink": "#2a1a06"
+      },
+      "confetti": [
+        "#f6efdc",
+        "#c9a24e",
+        "#3f7fb8",
+        "#6aa85a",
+        "#b04a2e"
+      ],
+      "stampConfetti": [
+        "#f6efdc",
+        "#c9a24e",
+        "#3f7fb8",
+        "#6aa85a"
+      ],
+      "mapVisited": "#2a2018",
+      "mapDotEdge": "rgba(42,32,24,0.6)",
+      "mapArrow": "#b04a2e",
+      "mapArrowEdge": "#2a2018",
+      "stars": "#fff6e0",
+      "space": "#05060c",
+      "earthSea": "#3f7fb8",
+      "earthLand": "#6aa85a",
+      "earthIce": "#f2efe6",
+      "earthCloud": "#fbf7ec",
+      "portholeTunnel": "#d8c7a3",
+      "cardboard": "#c79b68",
+      "cardboardDark": "#a87d4f",
+      "paper": "#f6efdc",
+      "labelCard": "#f6efdc",
+      "labelInk": "#2a2018",
+      "labelInkSoft": "#6b5a45"
+    },
+    "materials": {
+      "shading": "toon",
+      "toonSteps": 3,
+      "roughnessScale": 1,
+      "metalnessScale": 1,
+      "exposure": 1.0,
+      "toneMapping": "none",
+      "floorPattern": "kraft",
+      "displayCases": true,
+      "exhibitEmissive": 0.12,
+      "pillarGlow": 0.08
+    },
+    "typography": {
+      "fontFamily": "\"Kalam\", \"Patrick Hand\", \"Segoe Print\", \"Bradley Hand\", cursive",
+      "fontUrl": "https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap",
+      "maxWeight": 700,
+      "letterSpacing": 1,
+      "handLettered": true
+    },
+    "css": {
+      "passport-gradient": "linear-gradient(90deg, #3f7fb8, #6aa85a, #c9a24e, #a8742a)",
+      "ribbon-gradient": "linear-gradient(180deg, #f3d48a, #c9a24e 45%, #8f6324)",
+      "ticket-bg": "linear-gradient(180deg, #fbf5e6, #efe2c4)",
+      "button-bg": "linear-gradient(180deg, #3a4a6a, #263451)",
+      "flash-bg": "radial-gradient(circle, #ffffff 0%, #cfe0ff 55%, #05060c 100%)",
+      "overlay-bg": "radial-gradient(ellipse at center, rgba(5,6,12,0.25), rgba(5,6,12,0.8))",
+      "status-active-bg": "rgba(106,168,90,0.2)",
+      "status-active-ink": "#3e6b32",
+      "status-shipped-bg": "rgba(63,127,184,0.18)",
+      "status-shipped-ink": "#2c5a85",
+      "status-quiet-bg": "rgba(201,162,78,0.22)",
+      "status-quiet-ink": "#7a5a1c",
+      "status-retired-ink": "#6b5a45",
+      "ribbon-glow": "rgba(168,116,42,0.35)",
+      "ribbon-ink": "#2a1a06",
+      "ticket-halo": "rgba(251,245,230,0.12)",
+      "kbd-border": "rgba(60,40,20,0.35)",
+      "kbd-bg": "rgba(60,40,20,0.06)",
+      "crosshair": "rgba(42,32,24,0.9)",
+      "ghost-bg": "rgba(60,40,20,0.06)",
+      "chip-source-bg": "rgba(60,40,20,0.04)",
+      "chip-bg": "rgba(60,40,20,0.08)",
+      "minimap-bg": "rgba(247, 239, 220, 0.85)",
+      "card-bg": "rgba(247, 239, 220, 0.96)",
+      "shadow-soft": "rgba(20,12,4,0.22)",
+      "shadow": "rgba(20,12,4,0.35)",
+      "shadow-deep": "rgba(5,6,12,0.55)",
+      "shadow-deeper": "rgba(5,6,12,0.6)",
+      "ticket-kbd-bg": "rgba(60,40,20,0.06)",
+      "page-bg": "#0a0d18",
+      "region-default": "#a8742a",
+      "text-soft": "#3a2e22",
+      "text-facts": "#3a2e22",
+      "ticket-accent": "#a8742a",
+      "ticket-ink": "#2a2018",
+      "ticket-border": "#a8742a",
+      "ticket-head": "#8f6324",
+      "ticket-hot": "#b04a2e",
+      "ticket-muted": "#6b5a45",
+      "ticket-close": "#6b5a45",
+      "ticket-ghost": "#5a4630",
+      "button-ink": "#fbf5e6",
+      "button-edge": "#141c30",
+      "text-lede": "#4a3c2c",
+      "text-controls": "#3a2e22",
+      "ticket-kbd-border": "rgba(60,40,20,0.3)",
+      "font": "\"Iowan Old Style\", \"Palatino Linotype\", Palatino, Georgia, serif",
+      "glass": "rgba(247, 239, 220, 0.92)",
+      "line": "rgba(60, 40, 20, 0.22)",
+      "ink": "#2a2018",
+      "muted": "#6b5a45",
+      "gold": "#a8742a",
+      "title-font": "\"Kalam\", \"Patrick Hand\", \"Segoe Print\", \"Bradley Hand\", cursive",
+      "title-weight": "700"
+    },
+    "copy": {
+      "pageTitle": "The Paper Orbit",
+      "museumTitle": "THE PAPER ORBIT",
+      "museumSubtitle": "folded by one maker. do not unfold",
+      "lobbyName": "The Rotunda",
+      "betweenRooms": "Service corridor",
+      "unknownWingName": "Adrift",
+      "howToTitle": "Notes",
+      "howTo1": "Click to board",
+      "howTo2": "WASD to drift",
+      "howTo3": "Mouse to look",
+      "howTo4": "E to examine",
+      "howTo5": "Esc to let go",
+      "wingName": "",
+      "wingTagline": "",
+      "wingEmpty": "Drawers empty. Pending.",
+      "timelineName": "The Strata",
+      "timelineTagline": "Laid down in order.",
+      "timelineUndated": "No date",
+      "mirrorTitle": "FOIL GALLERY",
+      "mirrorSubtitle": "reflections, approximate",
+      "factoryName": "THE LABELLER",
+      "factorySubtitle": "hand-cranked  ·  lever (E)",
+      "factoryTicket": "#?",
+      "factoryPrompt": "E to crank",
+      "factoryPresents": "Labelled just now",
+      "factoryFresh": "origin unclear",
+      "surpriseFallback": "Specimen exists. Study pending.",
+      "surpriseFrom": "from",
+      "surpriseIn": "in",
+      "surpriseTeleport": "To its case",
+      "surpriseAgain": "Again",
+      "trapdoorLabel": "AIRLOCK",
+      "trapdoorSign": "it is open",
+      "trapdoorFall": "Cycling. Hold on.",
+      "trapdoorLand": "Docked in {wing}.",
+      "acqTitle": "ARRIVALS",
+      "acqSubtitle": "off the last shuttle",
+      "acqEmpty": "no shuttle yet",
+      "acqName": "Arrivals",
+      "acqTeleport": "Docked: Arrivals.",
+      "acqTeleportEmpty": "Arrivals bay. Empty.",
+      "ribbonNew": "NEW",
+      "ribbonRediscovered": "RE-FILED",
+      "freshPill": "New",
+      "onTimeline": "in the Strata",
+      "inAcquisitions": "in Arrivals",
+      "teleportTo": "Tubed to {name}.",
+      "allStamped": "All logged. The curators saw.",
+      "pointerLockFail": "No pointer lock. Drag to look, WASD to drift.",
+      "loading": "Unfolding...",
+      "loadingDone": "{exhibits} specimens, {wings} wings, 1 long stratum.",
+      "loadingError": "Could not load data/projects.json ({error}). Serve over http.",
+      "passport": "Log: {n} of {total}",
+      "passportDone": "All {total} logged. Noted.",
+      "sinceVisit": "{n} new since last orbit",
+      "sinceGo": "dock →",
+      "sinceTitle": "Go to Arrivals",
+      "stamped": "Logged",
+      "stampHint": "E to examine and log",
+      "resume": "Reboard",
+      "overlayEyebrow": "Still orbiting",
+      "overlayTitle": "The Paper Orbit",
+      "overlayLede": "Folded, labelled, never landed.",
+      "overlayControls": "<li><kbd>Click</kbd> to board, <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> and mouse to drift</li><li><kbd>E</kbd> to examine</li>",
+      "overlayStart": "Board",
+      "overlayTour": "Be carried",
+      "tourBanner": "Carried. <kbd>Esc</kbd> to let go.",
+      "pickerEyebrow": "First",
+      "pickerTitle": "Choose a door",
+      "pickerLede": "The same things wait behind both.",
+      "pickerHint": "Arrows, Enter, or 1 or 2.",
+      "pickerLast": "last time",
+      "dinoTitle": "P. longevus",
+      "dinoSubtitle": "bones that would not stop",
+      "dinoBoneLabel": "{start} to {end}, {years}y",
+      "dinoNow": "now"
+    }
+  },
+  "wings": {
+    "music": {
+      "copy": {
+        "wingTagline": "Pressed sound. Do not hum."
+      }
+    },
+    "side": {
+      "palette": {
+        "mirror": "#e4e1d8"
+      }
+    },
+    "timeline": {
+      "materials": {
+        "displayCases": false
+      }
+    }
+  },
+  "props": [
+    {
+      "type": "labelling-machine",
+      "housing": "#efe4c9",
+      "kraft": "#b48c5e",
+      "brass": "#b8862f",
+      "ink": "#2f3a52",
+      "knob": "#b04a2e",
+      "knobGlow": "#2a0a04",
+      "labelBg": "#f7efdc",
+      "labelInk": "#2a2018",
+      "labelSub": "#6b5a45",
+      "tag": "#f6efdc",
+      "tagEdge": "#8f6324",
+      "glow": "#fff1d6"
+    },
+    {
+      "type": "airlock",
+      "hatch": "#c9ccd2",
+      "hatchLine": "#5a6170",
+      "ink": "#2a2018",
+      "brass": "#b8862f",
+      "stripeA": "#f2c230",
+      "stripeB": "#2a2018",
+      "beacon": "#ffb02e"
+    },
+    {
+      "type": "starfield",
+      "count": 1600,
+      "size": 2
+    },
+    {
+      "type": "skylight",
+      "wing": "lobby",
+      "y": 10.5,
+      "radius": 7.5,
+      "tube": 0.12
+    },
+    {
+      "type": "dinosaur",
+      "wing": "lobby",
+      "angle": 67.5,
+      "radius": 8.6,
+      "scale": 1,
+      "bones": 6
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": -157.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": -112.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": -67.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": -22.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": 22.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": 112.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "lobby",
+      "angle": 157.5,
+      "y": 3.1
+    },
+    {
+      "type": "porthole",
+      "wing": "work",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "work",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "side",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "side",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "personal",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "personal",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "brain",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "brain",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "home",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "home",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "music",
+      "at": 0.3,
+      "side": -1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "music",
+      "at": 0.7,
+      "side": 1,
+      "y": 3.3
+    },
+    {
+      "type": "porthole",
+      "wing": "timeline",
+      "at": 0.5,
+      "side": 1,
+      "y": 3.3
+    }
+  ]
+}

@@ -1,0 +1,3706 @@
+{
+  "wings": [
+    {
+      "id": "work",
+      "name": "The Day Jobs Wing",
+      "tagline": "Stanford to Development Seed, with detours",
+      "color": "#ff9f43"
+    },
+    {
+      "id": "side",
+      "name": "The Side Quest Arcade",
+      "tagline": "Things built for the joy of it",
+      "color": "#48dbfb"
+    },
+    {
+      "id": "personal",
+      "name": "The Teaching Studio",
+      "tagline": "Where Danny teaches what he learned",
+      "color": "#ff6b81"
+    },
+    {
+      "id": "brain",
+      "name": "The Second Brain Lab",
+      "tagline": "Roy, Astrolabe and the machinery of remembering",
+      "color": "#a29bfe"
+    },
+    {
+      "id": "home",
+      "name": "The House That Pis Built",
+      "tagline": "Sheila, the frame, the generator",
+      "color": "#1dd1a1"
+    },
+    {
+      "id": "music",
+      "name": "The Music Room",
+      "tagline": "Guitar hands, synths and sheet music",
+      "color": "#feca57"
+    }
+  ],
+  "projects": [
+    {
+      "id": "invisible-doctor",
+      "name": "Invisible Doctor",
+      "wing": "music",
+      "years": "~1999",
+      "role": "Band member",
+      "summary": "A high school reggae band with Joe, Ben, Billy, Nick and Cyrus.",
+      "stack": [
+        "Music"
+      ],
+      "facts": [
+        "High school reggae"
+      ],
+      "surprise": "A high school reggae band, doctor hidden. Prognosis: groovy.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "something-else",
+      "name": "Something Else",
+      "wing": "music",
+      "years": "~2000",
+      "role": "Band member",
+      "summary": "A high school rock and ska band with Peter, Pat and Liam.",
+      "stack": [
+        "Music"
+      ],
+      "facts": [
+        "Songs include Pocket Space, I Am Not A Mongoose and Look Out Below"
+      ],
+      "surprise": "A ska band with a song called I Am Not A Mongoose. Noted.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "stanford-university",
+      "name": "Stanford University",
+      "wing": "work",
+      "years": "2003-2007",
+      "role": "B.S. in Computer Science",
+      "summary": "Where the computing foundation started. Its online-courses job (below) ran alongside the degree years.",
+      "stack": [
+        "Computer Science"
+      ],
+      "facts": [
+        "Earned a B.S. in Computer Science, 2003-2007",
+        "The Stanford Online job overlapped with the degree years"
+      ],
+      "surprise": "Studied computer science while already shipping lecture software to the world.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "type-town-revolution",
+      "name": "Type Town Revolution",
+      "wing": "side",
+      "years": "2003",
+      "role": "Co-built with a classmate",
+      "summary": "A college class project: a guitar-hero-style game for learning to type to the beat of songs.",
+      "stack": [
+        "Game"
+      ],
+      "facts": [
+        "Made with a classmate for a class"
+      ],
+      "surprise": "Guitar Hero for your keyboard. Your WPM now has a drummer.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "stanford-online",
+      "name": "Stanford Online",
+      "wing": "work",
+      "years": "~2005-2007",
+      "role": "Lead Developer, Stanford Center for Professional Development",
+      "summary": "Built the system that recorded and distributed lecture videos and supplemental content for Stanford classes online. Created Windows tools for authoring lectures and a custom CMS.",
+      "stack": [
+        "C#",
+        "ASP.NET",
+        "WS-Transfer",
+        "WS-Security",
+        "SOAP",
+        "SQL Server",
+        "SQLXML"
+      ],
+      "facts": [
+        "Built Windows tools authors used to make lectures",
+        "Wrote a custom CMS for the course content",
+        "Start month is approximate (spring 2005 by Danny's recollection)",
+        "Its custom CMS handles the flexible hierarchical structure of courses and their content"
+      ],
+      "surprise": "Built the lecture machine for Stanford, mostly as a student with a very full calendar.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "microsoft-xbox-zune",
+      "name": "Microsoft (Xbox, Windows Phone, Zune)",
+      "wing": "work",
+      "years": "2007-2011",
+      "role": "Software Development Engineer II",
+      "summary": "Built REST web services and databases for the music, video, podcast and app catalog on Xbox, Windows Phone and Zune. Scaled the backend to 30 million users across 32 markets.",
+      "stack": [
+        "C#",
+        "ASP.NET",
+        "WCF",
+        "SQL Server",
+        "XSLT",
+        "Lucene.NET"
+      ],
+      "facts": [
+        "Led development of REST web services and databases for the music, video, podcast and app catalog on Xbox, Windows Phone and Zune",
+        "Co-created the recommendation engine wrapper service behind Bing voice search on Xbox 360",
+        "Scaled the SQL Server backend and custom search to 30M+ users in 32 markets",
+        "Helped plan next-generation entertainment experiences for the Entertainment Marketplace Service team"
+      ],
+      "surprise": "His code helped a Zune and an Xbox find music for 30 million people in 32 markets.",
+      "scale": 3,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "microsoft-intern-windows-desktop-search",
+      "name": "Microsoft Internship: Windows Desktop Search",
+      "wing": "work",
+      "years": "2006",
+      "role": "Software Development Engineer Intern",
+      "summary": "Summer 2006 in Redmond as a C++ and COM developer on Windows Desktop Search, the year before joining full time.",
+      "stack": [
+        "C++",
+        "COM"
+      ],
+      "facts": [
+        "Jun 2006 - Aug 2006",
+        "Redmond, WA",
+        "Windows Desktop Search team"
+      ],
+      "surprise": "The summer job that turned into four years on Xbox and Zune.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "zune-town-defense",
+      "name": "Zune Town Defense",
+      "wing": "side",
+      "years": "2009",
+      "role": "Builder",
+      "summary": "A tower defense game made for the Zune.",
+      "stack": [
+        "Zune",
+        "C#"
+      ],
+      "facts": [
+        "Distributed as a zip file"
+      ],
+      "surprise": "A tower defense game for a Zune. It had both fans, and they loved it.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "selective-collective",
+      "name": "Selective Collective",
+      "wing": "music",
+      "years": "~2010",
+      "role": "Band member",
+      "summary": "A funk band from RoyTown with Adam, Larry, Mark, Christian and Xavier.",
+      "stack": [
+        "Music"
+      ],
+      "facts": [
+        "Songs include Daylight Funk, Relativity and What the..."
+      ],
+      "surprise": "A funk band from RoyTown, which is, yes, a real place.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "captains-orders",
+      "name": "Captain's Orders",
+      "wing": "music",
+      "years": "~2012",
+      "role": "Band member and website builder",
+      "summary": "A pirate-themed band whose site holds an event calendar, media gallery and profiles.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "facts": [
+        "Members include Ben, Brandon, Ryan, David, John, Ryan and Heather",
+        "Played Okanogan Family Barter Faire, Skyway and the Mt Hood Meadows Pond Skim",
+        "Plays accordion",
+        "The band is a pirate band"
+      ],
+      "surprise": "A pirate band with a website. Yes, there is a song about an axe.",
+      "link": "https://github.com/goggledefogger/captainsorders",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "jampions",
+      "name": "Jampions",
+      "wing": "music",
+      "years": "~2012",
+      "role": "Band member",
+      "summary": "A band with Brandon, Adam and David that played RoyTown warehouse parties.",
+      "stack": [
+        "Music"
+      ],
+      "facts": [
+        "Songs include Get Up to Get Down, Warehouse Party and Green Rose"
+      ],
+      "surprise": "Warehouse parties, a band in the corner, and a champion trophy for jamming.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "mt-hood-meadows-sound",
+      "name": "Mt. Hood Meadows Ski Resort",
+      "wing": "work",
+      "years": "2012-2013",
+      "role": "Live Sound Engineer",
+      "summary": "A winter job running live sound at a ski resort on Mt. Hood, Dec 2012 to Apr 2013.",
+      "stack": [
+        "Live sound"
+      ],
+      "facts": [
+        "Winter season job, Dec 2012 to Apr 2013"
+      ],
+      "surprise": "The only job where a bad mix meant snow-boots and a very cold audience.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "appnexus",
+      "name": "AppNexus",
+      "wing": "work",
+      "years": "2013",
+      "role": "Software Engineer: REST public and internal APIs, SQL database architecture",
+      "summary": "A short stint on an ad-tech platform handling real-time bidding at enormous volume. He built APIs and database design for it.",
+      "stack": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Git",
+        "Puppet",
+        "Jenkins",
+        "RabbitMQ",
+        "New Relic"
+      ],
+      "facts": [
+        "Web API engineer for an ad tech company, Portland and New York",
+        "Supported 50+ billion ad requests per day with Real Time Bidding",
+        "Built REST public and internal APIs including the SQL database architecture",
+        "Completed a Certified Scrum Product Owner certification"
+      ],
+      "surprise": "Fifty billion ad requests a day, and he still found time to get a Scrum certificate.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "roaring-mouse",
+      "name": "Roaring Mouse",
+      "wing": "work",
+      "years": "~2013-2026",
+      "role": "Technology consultant (Town Technology client)",
+      "summary": "Web work for a kids arts classes business.",
+      "stack": [
+        "WordPress",
+        "Excel macros"
+      ],
+      "facts": [
+        "Kids arts classes",
+        "Town Technology client engagement",
+        "Web development to register kids for arts classes and camps",
+        "Danny worked on engineering and as an advisor, with Excel macros in the 2021 Consultant version"
+      ],
+      "surprise": "The quietest-sounding client with the loudest name.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "saw-horse-pro",
+      "name": "Saw Horse Pro",
+      "wing": "work",
+      "years": "~2013",
+      "role": "Built the website",
+      "summary": "A website for modular wooden sawhorses, made with a friend's family.",
+      "stack": [
+        "Web"
+      ],
+      "facts": [
+        "The site is no longer available",
+        "It had its own theme song",
+        "Online store for modular wooden sawhorses",
+        "Danny worked on engineering and ads"
+      ],
+      "surprise": "A website with its own theme song. Your side projects do not.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "town-technology",
+      "name": "Town Technology LLC",
+      "wing": "work",
+      "years": "2013-present",
+      "role": "Founder / Technology Consultant",
+      "summary": "A consultancy that turns ambiguous client requirements into working systems for clients in Portland, San Francisco, Chicago, New York and Spain.",
+      "stack": [
+        "HTML/CSS/JavaScript",
+        "AWS",
+        "GCP",
+        "Firebase",
+        "Node.js",
+        "MySQL",
+        "Ruby on Rails",
+        "Shopify",
+        "WordPress"
+      ],
+      "facts": [
+        "Built PCI DSS 3.2.1 identity verification for SOLE Financial",
+        "Served as interim CTO for Mirakoli, a philanthropy e-commerce site with live streaming",
+        "Ran as CTO for a subscription clothing exchange, The Exchange PDX",
+        "Developed and maintained over 20 websites in JavaScript, PHP and Python"
+      ],
+      "surprise": "One consultancy, five cities, and an interim CTO hat that kept changing heads.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "BlinkyTapeQueue",
+      "name": "BlinkyTape Queue",
+      "wing": "side",
+      "years": "2014-2018",
+      "role": "builder",
+      "summary": "A messaging queue that triggers light patterns on a BlinkyTape LED strip.",
+      "stack": [
+        "Python",
+        "BlinkyTape LED"
+      ],
+      "facts": [
+        "README lists version 0.9",
+        "Sends light commands to the LED strip through a queue",
+        "Emails and IFTTT can trigger the lights, via Gmail and RabbitMQ"
+      ],
+      "surprise": "A tiny message queue whose only job is to make an LED strip blink.",
+      "link": "https://github.com/goggledefogger/BlinkyTapeQueue",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "common-tater",
+      "name": "Common Tater",
+      "wing": "work",
+      "years": "2014-2019",
+      "role": "Founder / CEO",
+      "summary": "A cross-platform peer-to-peer live audio commentary app where fans, friends and comedians broadcast alternative commentary alongside any event.",
+      "stack": [
+        "HTML/CSS/JavaScript",
+        "WebRTC",
+        "iOS",
+        "Firebase",
+        "AWS",
+        "CodeShip",
+        "SauceLabs",
+        "Zuul"
+      ],
+      "facts": [
+        "Peer-to-peer live audio commentary app where fans broadcast alternative commentary alongside any event",
+        "Built the company, team, cross-platform mobile app, responsive site and community",
+        "Used the custom Hypercast P2P technology, saving up to 90% on streaming costs"
+      ],
+      "link": "https://common-tater.firebaseapp.com",
+      "surprise": "A whole company built so strangers could heckle a game alongside their friends. Live.",
+      "scale": 3,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "hypercast",
+      "name": "Hypercast",
+      "wing": "work",
+      "years": "2014-2019",
+      "role": "Designed and built the custom low-latency P2P streaming network inside Common Tater",
+      "summary": "The custom peer-to-peer streaming technology under Common Tater, built to keep live audio fast and cheap to send to many listeners.",
+      "stack": [
+        "WebRTC",
+        "P2P overlay networking"
+      ],
+      "facts": [
+        "Per Danny's own description, saves up to 90% on streaming costs",
+        "Routes through a dynamic overlay network to keep latency ultra-low"
+      ],
+      "surprise": "Home-grown streaming network claiming up to 90% off the bill, built inside a startup.",
+      "scale": 2,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "martins-junk-hauling",
+      "name": "Martin's Junk Hauling",
+      "wing": "work",
+      "years": "~2014",
+      "role": "Built the company website",
+      "summary": "An informational website for a junk hauling service, built for a local client.",
+      "stack": [
+        "Web"
+      ],
+      "facts": [
+        "The live site has been updated since Danny built it"
+      ],
+      "surprise": "He built a website for hauling junk. Someone else gets the clutter.",
+      "link": "https://www.martinsjunkhauling.com/",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "mirakoli",
+      "name": "Mirakoli",
+      "wing": "work",
+      "years": "~2014",
+      "role": "Interim CTO, built the site",
+      "summary": "A philanthropy-focused e-commerce project built with a cofounder.",
+      "stack": [
+        "PHP",
+        "CodeIgniter",
+        "MySQL",
+        "Bootstrap"
+      ],
+      "facts": [
+        "Paused",
+        "Code lives on Bitbucket",
+        "A philanthropy-focused e-commerce and live video streaming platform",
+        "Danny served as interim CTO"
+      ],
+      "surprise": "Shopping with a conscience, with a cofounder.",
+      "link": "https://www.mirakoli.com/",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "roy-town-llc",
+      "name": "Roy.Town LLC",
+      "wing": "work",
+      "years": "2014-2020",
+      "role": "Co-Founder",
+      "summary": "An event space in Portland, owned and managed as a mixed-use space for events, music, art, podcasting, storytelling and games.",
+      "stack": [
+        "Property management",
+        "Event space operations"
+      ],
+      "facts": [
+        "The space hosted events, music, art, podcasting, storytelling and games",
+        "Located in Portland"
+      ],
+      "surprise": "He ran an event space where music, podcasts and games all shared one roof.",
+      "scale": 2,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "saturday-academy",
+      "name": "Saturday Academy classes",
+      "wing": "personal",
+      "years": "~2014",
+      "role": "Computer science teacher",
+      "summary": "Computer science classes for grades 6-12, covering JavaScript and app programming with Ruby.",
+      "stack": [
+        "JavaScript",
+        "Ruby"
+      ],
+      "facts": [
+        "Taught Programming in JavaScript",
+        "Taught App Programming with Ruby"
+      ],
+      "surprise": "Teaching teenagers to code on a Saturday. Brave, and a little caffeinated.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "SmugglersTown",
+      "name": "Smuggler's Town (original)",
+      "wing": "side",
+      "years": "2014-2026",
+      "role": "builder",
+      "summary": "Multiplayer capture-the-flag on top of Google Maps: the yellow Town team against the red Crush team.",
+      "stack": [
+        "JavaScript",
+        "Google Maps"
+      ],
+      "facts": [
+        "Grab the smoking golden flag and bring it home",
+        "Repo was last pushed 2026-08-03",
+        "Multiplayer driving game modeled on Smuggler's Run for PlayStation 2; live at smugglers.roytown.net"
+      ],
+      "surprise": "Capture the golden flag on a Google Map: Town versus Crush, last pushed in 2026.",
+      "link": "https://github.com/goggledefogger/SmugglersTown",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "soldsie",
+      "name": "Soldsie",
+      "wing": "work",
+      "years": "~2014",
+      "role": "Built the platform",
+      "summary": "A Facebook e-commerce platform.",
+      "stack": [
+        "Facebook"
+      ],
+      "facts": [
+        "Sold things through Facebook comments"
+      ],
+      "surprise": "Type \"sold\" under a photo and a sale happens. It was 2014.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "TopWizardWP8",
+      "name": "Top Wizard",
+      "wing": "side",
+      "years": "2014",
+      "role": "builder",
+      "summary": "A Windows Phone app to track wins and losses in Magic: The Gathering, made for friends.",
+      "stack": [
+        "C#",
+        "Windows Phone 8"
+      ],
+      "facts": [
+        "Tagline: The True Magic Crusher",
+        "README lists version 0.1",
+        "Planned photo and deck management"
+      ],
+      "surprise": "Tracks Magic: The Gathering wins on a Windows Phone. Tagline: The True Magic Crusher.",
+      "link": "https://github.com/goggledefogger/TopWizardWP8",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "big-brass-bash",
+      "name": "Big Brass Bash",
+      "wing": "side",
+      "years": "~2015",
+      "role": "Built the website",
+      "summary": "The website for Heather's family's Big Brass Bash low brass music festival.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "facts": [
+        "Has registration, a schedule and festival history",
+        "Code lives on Bitbucket"
+      ],
+      "surprise": "A website for a festival of tubas and trombones. Loud, but only on weekends.",
+      "link": "https://hpnwbbb.org/",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "global-green-energy",
+      "name": "Global Green Energy Corp",
+      "wing": "work",
+      "years": "~2015",
+      "role": "Built the platform",
+      "summary": "An IoT platform for network-connected solar panel inverters, built with a partner.",
+      "stack": [
+        "IoT"
+      ],
+      "facts": [
+        "Solar inverters report in over the network",
+        "Built an early IoT platform connecting their inverters",
+        "One possible approach; it never reached production",
+        "Where Danny's solar interest started"
+      ],
+      "surprise": "Solar panels that text you. Sunny, mostly.",
+      "scale": 2,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "jamsphere",
+      "name": "JamSphere",
+      "wing": "music",
+      "years": "~2015",
+      "role": "Jam band member",
+      "summary": "Jamming with Jeff, Ryan, Graham and John.",
+      "stack": [
+        "Music"
+      ],
+      "facts": [
+        "Covers include Walking in Memphis, Kokomo and Overkill"
+      ],
+      "surprise": "A jam circle that went from Kokomo to Memphis with one setlist.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "makahiki-challenge",
+      "name": "Makahiki Challenge",
+      "wing": "work",
+      "years": "~2015",
+      "role": "Built the registration platform",
+      "summary": "A Hawaiian obstacle course race registration website platform, built with Kapu.",
+      "stack": [
+        "Firebase"
+      ],
+      "facts": [
+        "Includes Kapu in the race registration flow",
+        "E-commerce CMS and web platform to register and pay for events",
+        "Expanded from the Hawaii race to host 3 events",
+        "Used for 3 events"
+      ],
+      "surprise": "Signing up for a mud run in Hawaii, now with fewer clipboards.",
+      "link": "https://makahiki-challenge.firebaseapp.com",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "realtime-model",
+      "name": "realtime-model",
+      "wing": "side",
+      "years": "2015-2017",
+      "role": "helper",
+      "summary": "A Firebase-compatible model abstraction so browser data updates live instead of needing a refresh.",
+      "stack": [
+        "JavaScript",
+        "Firebase"
+      ],
+      "facts": [
+        "Private fields need custom security rules, because the data layout is unusual",
+        "Written against refresh-button polling, per the README"
+      ],
+      "surprise": "Written against refresh-button polling so a browser could finally update itself live.",
+      "link": "https://github.com/goggledefogger/realtime-model",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "tech-town-show",
+      "name": "Tech Town",
+      "wing": "side",
+      "years": "~2015",
+      "role": "Co-host",
+      "summary": "A YouTube tech show made with a co-host.",
+      "stack": [
+        "YouTube"
+      ],
+      "facts": [
+        "Lives on the TechTownChannel",
+        "Co-hosted a YouTube channel for tech education",
+        "Channel name: TechTownChannel",
+        "Dates are not in the corpus"
+      ],
+      "surprise": "A tech show with a town in the name. Surprisingly, no mayor.",
+      "link": "https://www.youtube.com/TechTownChannel",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "articulate",
+      "name": "Articulate",
+      "wing": "side",
+      "years": "2016-2022",
+      "role": "builder",
+      "summary": "Lets people communicate by touch instead of speaking, with customizable choices and smooth transitions.",
+      "stack": [
+        "JavaScript"
+      ],
+      "facts": [
+        "Choices nest as many levels deep as you want",
+        "Communicate by touch instead of speaking",
+        "A static site built for people who need another way to communicate"
+      ],
+      "surprise": "A tap-to-talk app with choices nested as deep as you like, built across six years.",
+      "link": "https://github.com/goggledefogger/articulate",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "build-js",
+      "name": "build-js",
+      "wing": "side",
+      "years": "2016",
+      "role": "helper",
+      "summary": "A personal JavaScript build script on watchify, babelify and envify, for people who are not crazy about build frameworks.",
+      "stack": [
+        "JavaScript",
+        "Browserify"
+      ],
+      "facts": [
+        "Built on watchify, babelify, envify and browserify-versionify",
+        "README explicitly calls it a personal flavor"
+      ],
+      "surprise": "A build script for people who are not crazy about build frameworks.",
+      "link": "https://github.com/goggledefogger/build-js",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "google-cloud-media",
+      "name": "Google Cloud Media Services",
+      "wing": "work",
+      "years": "2016-2017",
+      "role": "Product Manager, Google Cloud Media Services",
+      "summary": "Launched modular Cloud Video APIs and a complete OTT streaming platform, working with NBC, Snapchat and Spotify. The focus was developer experience and API docs.",
+      "stack": [
+        "Google Cloud Compute",
+        "Cloud Storage",
+        "CDN",
+        "BigQuery",
+        "Machine Learning Engine",
+        "Cloud APIs"
+      ],
+      "facts": [
+        "Launched products with Google Cloud Media, the Media and Entertainment vertical",
+        "Shipped modular Cloud Video APIs with YouTube, Cloud CDN, Storage and ML",
+        "Worked with NBC, Snapchat, Spotify, sports leagues and news organizations",
+        "Focused on developer experience and API documentation"
+      ],
+      "surprise": "Product-managed video APIs for NBC, Snapchat and Spotify, then wrote the docs people actually read.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "sole-financial",
+      "name": "SOLE Financial",
+      "wing": "work",
+      "years": "~2016",
+      "role": "Built the web app",
+      "summary": "A web app for secure identity verification.",
+      "stack": [
+        "Web"
+      ],
+      "facts": [
+        "Built to PCI DSS 3.2.1",
+        "PCI DSS 3.2.1 compliant web app for secure identity verification with payroll debit cards",
+        "Danny advised and supported vendor selection",
+        "PCI DSS 3.2.1 identity verification"
+      ],
+      "surprise": "Proving you are you, to a very picky auditor.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "stoplight-tool",
+      "name": "Stoplight Tool",
+      "wing": "work",
+      "years": "~2016",
+      "role": "Built the app",
+      "summary": "An app for medically fragile children that helps triage health conditions quickly.",
+      "stack": [
+        "Mobile"
+      ],
+      "facts": [
+        "Red, yellow and green for health triage",
+        "Triage for medically fragile children",
+        "Town Technology client engagement",
+        "Exact dates are not in the corpus"
+      ],
+      "surprise": "A traffic light for a bad day, where red means call someone.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "the-exchange-pdx",
+      "name": "The Exchange PDX",
+      "wing": "work",
+      "years": "~2016",
+      "role": "CTO",
+      "summary": "An online clothing exchange membership.",
+      "stack": [
+        "Web"
+      ],
+      "facts": [
+        "Subscription clothing swaps",
+        "Monthly subscription clothing exchange service",
+        "Danny served as CTO",
+        "Subscription clothing exchange"
+      ],
+      "surprise": "Swapping clothes by subscription, no closet required.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "cutting-edge-digital-artists",
+      "name": "Cutting Edge Digital Artists",
+      "wing": "work",
+      "years": "~2017",
+      "role": "Partner and builder",
+      "summary": "A design and fabrication outfit covering CNC, woodworking and design services.",
+      "stack": [
+        "Wix"
+      ],
+      "facts": [
+        "Offers CNC, woodworking and design services",
+        "CAD/CAM and CNC milling work",
+        "Danny did engineering and business development",
+        "CAD/CAM CNC"
+      ],
+      "surprise": "Part code, part sawdust. The CNC machine does not do dishes.",
+      "link": "https://townwizard.wixsite.com/ceda",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "datamago",
+      "name": "Datamago",
+      "wing": "work",
+      "years": "2017-present",
+      "role": "Co-founder / Director of Software Engineering",
+      "summary": "An AI cloud platform co-founded by Danny, who directs its software engineering across architecture, development, testing and DevOps.",
+      "stack": [
+        "Google Cloud Platform",
+        "Firebase",
+        "Node.js",
+        "Python",
+        "Jest",
+        "Cypress",
+        "Jupyter",
+        "forecasting",
+        "open data catalog"
+      ],
+      "facts": [
+        "Architecture, development, testing and DevOps"
+      ],
+      "link": "https://www.datamago.com",
+      "surprise": "An AI cloud platform, with software engineering run from architecture to DevOps.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "bright-line-eating",
+      "name": "Bright Line Eating",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "A mindfulness platform delivered as a DevelopmentNow project.",
+      "stack": [
+        "web",
+        "Mobile app"
+      ],
+      "facts": [
+        "Mindfulness platform",
+        "DevelopmentNow project",
+        "A mobile app to improve diet and health with mindfulness",
+        "A DevelopmentNow client project"
+      ],
+      "surprise": "A calm app, delivered through very un-calm sprints.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "deal-with-it",
+      "name": "Deal With It",
+      "wing": "side",
+      "years": "~2018",
+      "role": "Co-host",
+      "summary": "A podcast with three friends.",
+      "stack": [
+        "Podcast"
+      ],
+      "facts": [
+        "Recordings live in a OneDrive folder"
+      ],
+      "surprise": "A podcast named for a shrug. Four friends, one microphone.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "devnow",
+      "name": "DevelopmentNow",
+      "wing": "work",
+      "years": "2018-2021",
+      "role": "Digital Project Manager",
+      "summary": "Ran technical projects from discovery through launch and support for React and React Native teams, including Bluetooth hardware and IoT sensor work.",
+      "stack": [
+        "React",
+        "React Native",
+        "Firebase",
+        "AWS",
+        "Jira",
+        "Confluence",
+        "Sentry.io",
+        "Postman"
+      ],
+      "facts": [
+        "Projects included Heartland laundry machines, PortaConX porta potty sensors, WARN winch control and Roth HVAC apps",
+        "Worked on a train-blocking detector (isatrainblocking11th.com)",
+        "Managed over 15 web, mobile and hardware-integrated projects with cross-functional engineering and QA teams",
+        "15+ client launches and integrations"
+      ],
+      "surprise": "Managed an Echo and Ring launch, a Bluetooth wallet and a train-blocking detector. Busy tracks.",
+      "scale": 2,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "ilene-safyan-website",
+      "name": "Ilene Safyan's website",
+      "wing": "work",
+      "years": "~2018",
+      "role": "Maintains the site",
+      "summary": "Ongoing tech consulting and website maintenance for Ilene Safyan.",
+      "stack": [
+        "Web"
+      ],
+      "facts": [
+        "Code lives on GitHub",
+        "Listed under personal/one-off utilities",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The quiet kind of tech support: it works, so no one calls.",
+      "link": "https://ilenesafyan.com/",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "micropaymentsgs",
+      "name": "MicropaymentsGS",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "A mobile Bluetooth payments app delivered as a DevelopmentNow project.",
+      "stack": [
+        "Bluetooth",
+        "mobile",
+        "Mobile app"
+      ],
+      "facts": [
+        "Mobile Bluetooth payments",
+        "DevelopmentNow project, Nov 2018 - Aug 2021 tenure",
+        "Lets users pay for laundry from their smartphone via Bluetooth",
+        "Digital payments in hardware systems via Bluetooth"
+      ],
+      "surprise": "Tap your phone near a thing, pay a tiny amount. Danny kept the sprint on rails.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "portaconx",
+      "name": "PortaConX",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "IoT sensor work delivered as a DevelopmentNow project.",
+      "stack": [
+        "IoT"
+      ],
+      "facts": [
+        "IoT sensors",
+        "DevelopmentNow project",
+        "An IoT platform for porta potty sensors",
+        "One of the IoT smart-space sensor integrations"
+      ],
+      "surprise": "Sensors on things that can't tell you how they feel.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "readicheck",
+      "name": "ReadiCheck",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "An app for AED (defibrillator) inspections, delivered as a DevelopmentNow project.",
+      "stack": [
+        "mobile",
+        "Mobile app"
+      ],
+      "facts": [
+        "AED inspections",
+        "DevelopmentNow project",
+        "Danny was the project manager",
+        "Used to submit inspections of AED defibrillators"
+      ],
+      "surprise": "An app that checks the thing that restarts hearts.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "regeneron-websites",
+      "name": "Regeneron",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "Medical websites built for Regeneron as a DevelopmentNow project.",
+      "stack": [
+        "web"
+      ],
+      "facts": [
+        "Medical websites",
+        "DevelopmentNow project",
+        "Danny was the project manager",
+        "Informational websites for drug treatments for eye and lung disease"
+      ],
+      "surprise": "Regulated-industry web pages, with regulated-industry review cycles.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "rigado-iot",
+      "name": "Rigado",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "IoT smart-spaces work for Rigado, delivered as a DevelopmentNow project.",
+      "stack": [
+        "IoT"
+      ],
+      "facts": [
+        "IoT smart spaces",
+        "DevelopmentNow project",
+        "An IoT platform for smart commercial spaces",
+        "IoT smart-space sensor work, alongside PortaConX"
+      ],
+      "surprise": "Smart spaces, years before everyone had a smart speaker.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "stranger-than-fikshun",
+      "name": "Stranger Than FikShun",
+      "wing": "side",
+      "years": "~2018",
+      "role": "Co-host",
+      "summary": "A live storytelling podcast made with friends.",
+      "stack": [
+        "Podcast"
+      ],
+      "facts": [
+        "Recordings live in a OneDrive folder"
+      ],
+      "surprise": "True stories, told live, and stranger than the made-up ones.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "warn-industries",
+      "name": "WARN Industries",
+      "wing": "work",
+      "years": "~2018-2021",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "Bluetooth hardware control, delivered as a DevelopmentNow project.",
+      "stack": [
+        "Bluetooth",
+        "mobile",
+        "Mobile app"
+      ],
+      "facts": [
+        "Bluetooth hardware control",
+        "DevelopmentNow project",
+        "Controls WARN's winch and snowplow hardware via Bluetooth",
+        "One of the Bluetooth hardware projects"
+      ],
+      "surprise": "Phone-controlled hardware, built where software meets winches.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "isatrainblocking11th",
+      "name": "IsATrainBlocking11th",
+      "wing": "work",
+      "years": "~2019",
+      "role": "Project manager at DevelopmentNow",
+      "summary": "A site that tells you whether a train is blocking 11th street.",
+      "stack": [
+        "CV/ML"
+      ],
+      "facts": [
+        "A DevelopmentNow project",
+        "A yes/no website powered by computer vision ML",
+        "Detects when a train is blocking the street next to the office",
+        "CV/ML detection"
+      ],
+      "surprise": "A website that answers one question, and sometimes saves your commute.",
+      "link": "https://isatrainblocking11th.com/",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "amazon-launch-event-2020",
+      "name": "Amazon.com Launch Event (Echo and Ring)",
+      "wing": "work",
+      "years": "2020",
+      "role": "Digital Project Manager (DevelopmentNow)",
+      "summary": "The Fall 2020 Amazon.com launch event for Echo and Ring products, run as a DevelopmentNow project.",
+      "stack": [],
+      "facts": [
+        "Fall 2020 Echo and Ring launch event",
+        "DevelopmentNow project",
+        "A live-streaming event site for Amazon's Echo and Ring launch in Fall 2020",
+        "Owned the client relationship through the project"
+      ],
+      "surprise": "Fall 2020, the biggest stage of the DevNow years.",
+      "scale": 2,
+      "status": "shipped",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "cosmic-pranksters",
+      "name": "Cosmic Pranksters",
+      "wing": "side",
+      "years": "~2020",
+      "role": "Animator",
+      "summary": "A 5th-anniversary animated video made as a personal project.",
+      "stack": [
+        "Animation"
+      ],
+      "facts": [
+        "Made for friends and family"
+      ],
+      "surprise": "An anniversary card that came out as a cartoon. Heartfelt, then silly.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "review-360-leveling-framework",
+      "name": "360 Review and Leveling Framework",
+      "wing": "work",
+      "years": "~2021-2026",
+      "role": "Author (Development Seed)",
+      "summary": "A comprehensive 360 annual review with a growth and leveling framework, built at Development Seed.",
+      "stack": [],
+      "facts": [
+        "Developed the 360 annual review",
+        "Includes growth and leveling framework",
+        "Built alongside onboarding and playbooks"
+      ],
+      "surprise": "How a sixty-five-person team learns where it stands.",
+      "scale": 2,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "development-seed",
+      "name": "Development Seed",
+      "wing": "work",
+      "years": "2021-present",
+      "role": "Technical People Lead",
+      "summary": "Leads technical talent and AI enablement for a remote team that builds open-source geospatial and agentic software for NASA, ESA, The Nature Conservancy and the World Resources Institute.",
+      "stack": [
+        "Claude Code",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Git",
+        "Google Workspace"
+      ],
+      "facts": [
+        "Grew the team from 40 to 65 employees as hiring manager",
+        "Developed the 360 annual review and leveling framework",
+        "Created a 360 annual review with a growth and leveling framework"
+      ],
+      "surprise": "Grew a remote team from 40 to 65 people and still found time for 30+ monthly 1:1s.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "development-seed-mentorship-program",
+      "name": "Development Seed Mentorship Program",
+      "wing": "work",
+      "years": "~2021-present",
+      "role": "Created the internal mentorship program",
+      "summary": "An internal mentorship program, published as a public repo, pairing people across the organization. It had 71 participants and 22+ pairings.",
+      "stack": [
+        "Git",
+        "GitHub"
+      ],
+      "facts": [
+        "71 participants and 22+ pairings",
+        "Public repo",
+        "Danny created the program at Development Seed"
+      ],
+      "surprise": "71 people signed up to be mentored, and 22+ pairs have already clicked.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "hiring-playbook",
+      "name": "Hiring Playbook",
+      "wing": "work",
+      "years": "~2021-2026",
+      "role": "Author (Development Seed)",
+      "summary": "An end-to-end hiring playbook from application review through the final interview, written while Danny grew the team.",
+      "stack": [],
+      "facts": [
+        "Covers application review through final interview",
+        "Team grew from 40 to 65 employees under Danny as hiring manager",
+        "One of several repeatable operational systems built"
+      ],
+      "surprise": "Forty people to sixty-five, with the instructions written down.",
+      "scale": 2,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "project-playbook",
+      "name": "Project Playbook",
+      "wing": "work",
+      "years": "~2021-2026",
+      "role": "Co-author (Development Seed)",
+      "summary": "A playbook for mission-aligned agile project management, co-authored at Development Seed.",
+      "stack": [
+        "Agile",
+        "Scrum"
+      ],
+      "facts": [
+        "Agile project management for mission-aligned work",
+        "Codifies delivery practices across NASA, World Bank and humanitarian portfolios",
+        "Co-authored with best practices for mission-aligned agile project management",
+        "Integrates values-based agile with AI-assisted development workflows"
+      ],
+      "surprise": "The manual for running agile when the client is the planet.",
+      "scale": 2,
+      "status": "active",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "audio-visual-experience",
+      "name": "A Fractal Experience",
+      "wing": "music",
+      "years": "2023",
+      "role": "Built the experiment that turns beats into fractal visuals",
+      "summary": "A blend of sounds and fractal visuals created with AI assistance, for musicians and visual artists.",
+      "stack": [
+        "Python",
+        "Audio engine",
+        "Visual engine"
+      ],
+      "facts": [
+        "The visual math was written with an AI assistant doing the heavy lifting",
+        "Runs with one command: python main.py",
+        "Danny invites pull requests and jam sessions on it",
+        "Split into audio engine, visual engine and UI modules"
+      ],
+      "surprise": "Written over five autumn days in 2023, and the visual math was handed to an AI.",
+      "link": "https://github.com/goggledefogger/audio-visual-experience",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "diy-ai-art-merch-chatbot",
+      "name": "DIY AI Art to Merch Store Chatbot",
+      "wing": "side",
+      "years": "2023",
+      "role": "Builder",
+      "summary": "A chatbot that helps people make AI art and turn it into merch, built with ChatGPT and the Printify plugin.",
+      "stack": [
+        "ChatGPT",
+        "Printify"
+      ],
+      "facts": [
+        "The Printify plugin has since been deprecated",
+        "A video demo survives"
+      ],
+      "surprise": "Describe a picture, get a mug. The plugin retired before the mug arrived.",
+      "scale": 1,
+      "status": "retired",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "gorillas2000",
+      "name": "Gorillas2000",
+      "wing": "side",
+      "years": "2023-2024",
+      "role": "builder",
+      "summary": "A modern remake of the classic DOS game Gorillas, made as a birthday gift for a friend.",
+      "stack": [
+        "JavaScript"
+      ],
+      "facts": [
+        "README credits the original DOS game to IBM, 1991",
+        "Controls are angle and velocity sliders plus a Throw button",
+        "Demo runs on GitHub Pages"
+      ],
+      "surprise": "The 1991 DOS banana-throwing classic, now with sliders. Mind the wind.",
+      "link": "https://github.com/goggledefogger/gorillas2000",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "smart-ring-os",
+      "name": "Smart Ring OS",
+      "wing": "side",
+      "years": "~2023",
+      "role": "Builder",
+      "summary": "A Bluetooth smart ring OS that uses Android's Automate app to control phone tasks.",
+      "stack": [
+        "Android",
+        "Automate",
+        "Bluetooth"
+      ],
+      "facts": [
+        "Still a prototype"
+      ],
+      "surprise": "A ring that runs your phone. One twist of a finger.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "talk-of-the-town",
+      "name": "Talk of the Town",
+      "wing": "side",
+      "years": "2023",
+      "role": "builder",
+      "summary": "A voice chatbot where you talk with AI characters, each with its own voice and generative-art portrait.",
+      "stack": [
+        "Python",
+        "GPT-3",
+        "Text-to-speech"
+      ],
+      "facts": [
+        "Combines GPT-3 with ElevenLabs and Google text-to-speech",
+        "Per the repo description, characters can also talk to each other"
+      ],
+      "surprise": "AI characters that talk back with their own voice and a generative-art portrait.",
+      "link": "https://github.com/goggledefogger/talk-of-the-town",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "yoda-the-brave",
+      "name": "Yoda The Brave",
+      "wing": "side",
+      "years": "2023",
+      "role": "Author and illustrator",
+      "summary": "A children's storybook with AI-generated art, starring a beloved dog and made for Heather.",
+      "stack": [
+        "Google Slides",
+        "AI art"
+      ],
+      "facts": [
+        "Hardest part was keeping Yoda looking like Yoda"
+      ],
+      "surprise": "A storybook starring a very good dog. Brave, treat-motivated and AI-drawn.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "ai-assisted-projects-2024-2026",
+      "name": "50+ AI-assisted projects on GitHub",
+      "wing": "side",
+      "years": "2024-2026",
+      "role": "Builder",
+      "summary": "A body of more than fifty AI-assisted projects built since April 2024 and published on github.com/goggledefogger. They span web apps, agent infrastructure, media tools and games.",
+      "stack": [
+        "Claude Code",
+        "Agentic tools"
+      ],
+      "facts": [
+        "50+ AI-assisted projects built since April 2024",
+        "About 25 of those were built in the first five months of 2026",
+        "Span web apps, agent infrastructure, media tools and games"
+      ],
+      "surprise": "Fifty-plus AI-assisted projects since April 2024, about 25 of them in 2026's first five months.",
+      "link": "github.com/goggledefogger",
+      "scale": 2,
+      "status": "active",
+      "sources": [
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "calm-break-balls",
+      "name": "Calm Break Balls",
+      "wing": "side",
+      "years": "2024",
+      "role": "builder",
+      "summary": "A 3D ball-breaking shooter in React and Three.js: aim, shoot balls, and clear blocks before they reach the bottom.",
+      "stack": [
+        "React",
+        "Three.js"
+      ],
+      "facts": [
+        "Blocks have varying health points",
+        "Every commit landed on 2024-09-29"
+      ],
+      "surprise": "Every commit landed in one day, 29 September 2024. A calm break indeed.",
+      "link": "https://github.com/goggledefogger/calm-break-balls",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "chronic-illbot",
+      "name": "Chronic Illbot",
+      "wing": "side",
+      "years": "2024",
+      "role": "Builder",
+      "summary": "A support assistant for chronic illness with symptom tracking, wellness tips and emotional support.",
+      "stack": [
+        "Python",
+        "OpenAI GPT-4"
+      ],
+      "facts": [
+        "Hardest part was keeping the emotional support sensitive"
+      ],
+      "surprise": "A chatbot that listens first and advises second. Rarer than it sounds.",
+      "link": "https://github.com/goggledefogger/chronic-illbot",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "fisker-manual",
+      "name": "Fisker Ocean Manual Downloader",
+      "wing": "side",
+      "years": "2024",
+      "role": "helper",
+      "summary": "Downloads the Fisker Ocean Owner's Manual and turns it into a PDF for offline reading.",
+      "stack": [
+        "Python"
+      ],
+      "facts": [
+        "Targets macOS, using Homebrew for setup",
+        "Requires Python 3.8",
+        "Scrapes with Python and Playwright"
+      ],
+      "surprise": "Rescued a car owner's manual from the web and made it a PDF for the road.",
+      "link": "https://github.com/goggledefogger/fisker-manual",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "parquet-viewer",
+      "name": "Parquet File Processor",
+      "wing": "side",
+      "years": "2024",
+      "role": "helper",
+      "summary": "Upload a local Parquet file or fetch one by URL, then see its columns and sample rows in the browser.",
+      "stack": [
+        "JavaScript"
+      ],
+      "facts": [
+        "Accepts local uploads and remote URLs",
+        "Shows columns and sample data"
+      ],
+      "surprise": "Drop in a Parquet file and see its columns and a few rows at once.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "podcast-helper",
+      "name": "Podcast Content Optimizer",
+      "wing": "side",
+      "years": "2024",
+      "role": "builder",
+      "summary": "Processes podcast audio, transcribes it and finds segments worth editing. Still a work in progress.",
+      "stack": [
+        "Python",
+        "Whisper",
+        "OpenAI",
+        "Gemini"
+      ],
+      "facts": [
+        "Supports both OpenAI GPT and Google Gemini for analysis",
+        "Can search for podcasts through the Taddy API",
+        "Uses Taddy API, OpenAI and Google Gemini; builds a dynamic RSS feed"
+      ],
+      "surprise": "Whisper transcribes the episode and an AI flags the parts worth cutting.",
+      "link": "https://github.com/goggledefogger/podcast-helper",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "podcast-generator",
+      "name": "Podcast Generation Buddy",
+      "wing": "side",
+      "years": "2024",
+      "role": "builder",
+      "summary": "Automates making podcast episodes: script from a topic, speech from the macOS say command, audio stitched with SoX.",
+      "stack": [
+        "Python",
+        "SoX"
+      ],
+      "facts": [
+        "Script generation takes topic, speaker count and duration",
+        "Text-to-speech uses the macOS say command",
+        "Writes scripts, speaks them with text-to-speech and edits audio with SoX"
+      ],
+      "surprise": "A topic goes in, and a podcast voiced by the Mac's say command comes out.",
+      "link": "https://github.com/goggledefogger/podcast-generator",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "react-share-links",
+      "name": "Share Links",
+      "wing": "side",
+      "years": "2024",
+      "role": "builder",
+      "summary": "A link-sharing app with topic channels, emoji instead of comments, and automatic link previews.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Firebase"
+      ],
+      "facts": [
+        "Link previews include enhanced YouTube support",
+        "Built with React because Danny was learning it",
+        "Has channels, emoji reactions and link previews, on Firebase"
+      ],
+      "surprise": "Built mostly because Danny was learning React, and emoji replace comments.",
+      "link": "https://github.com/goggledefogger/react-share-links",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "share-links",
+      "name": "share-links (the original)",
+      "wing": "side",
+      "years": "~2024",
+      "role": "Builder",
+      "summary": "A link-sharing utility, the sibling of react-share-links.",
+      "stack": [],
+      "facts": [
+        "Listed under personal/one-off utilities",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The sharing button that started the family.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "legacy-of-hatshepsut",
+      "name": "The Legacy of Hatshepsut",
+      "wing": "side",
+      "years": "2024",
+      "role": "Director",
+      "summary": "An AI-generated movie about the ancient Egyptian pharaoh Hatshepsut, made for Heather.",
+      "stack": [
+        "Hailuo Minimax",
+        "AI images"
+      ],
+      "facts": [
+        "Hardest part was keeping the visuals coherent"
+      ],
+      "surprise": "A pharaoh movie made at a desk. No camels were consulted.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "todo-plus-plus",
+      "name": "todo-plus-plus",
+      "wing": "side",
+      "years": "~2024-2026",
+      "role": "Builder",
+      "summary": "A personal utility listed in the portfolio catalog.",
+      "stack": [],
+      "facts": [
+        "Listed under personal/one-off utilities",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "One more to-do list, because the others were not quite right.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "webcam-gpt-vision",
+      "name": "WebcamGPT-Vision",
+      "wing": "side",
+      "years": "2024",
+      "role": "Builder",
+      "summary": "Processes webcam images with OpenAI's GPT-4 Vision API and describes them.",
+      "stack": [
+        "PHP",
+        "Node.js",
+        "Python",
+        "Flask"
+      ],
+      "facts": [
+        "Meant to help vision impaired people and curious developers",
+        "Dated 2024-04 in the portfolio catalog",
+        "Early AI vision experiment",
+        "Public repo on goggledefogger"
+      ],
+      "surprise": "Point a webcam at your room and an AI reads it aloud. Mind the laundry.",
+      "link": "https://github.com/goggledefogger/WebcamGPT-Vision",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "30-day-map-challenge-2025",
+      "name": "30-Day Map Challenge 2025",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "An AI mapping experiment for the #30DayMapChallenge: one map theme per day, with AI models and platforms run in parallel.",
+      "stack": [
+        "HTML",
+        "AI-assisted prototyping"
+      ],
+      "facts": [
+        "Live site runs on GitHub Pages",
+        "README sets a code-of-conduct guardrail: publish only your own work, cite every dataset, call out AI-assisted contributions",
+        "A comparison of AI mapping tools and how Danny guided them"
+      ],
+      "surprise": "A map a day with several AI models racing each other, plus a rule to cite every dataset.",
+      "link": "https://github.com/dannybauman/30-day-map-challenge-2025",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "satellite-visualization-3d",
+      "name": "3D Rotatable Satellite Visualization with Filters",
+      "wing": "side",
+      "years": "~2025",
+      "role": "Builder",
+      "summary": "A 3D satellite viewer with filters, listed in the portfolio catalog next to the later bmad-satellite-viz-2.",
+      "stack": [
+        "3D"
+      ],
+      "facts": [
+        "Listed under AI-assisted games and creative experiments",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "Satellites, spinning, and filtered to your liking.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "qa-engineer-town",
+      "name": "AI QA Engineer Assistant",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "An AI QA helper for freelance testers: runs a Lighthouse audit, captures screenshots at three viewports, and asks Gemini Vision for UX notes.",
+      "stack": [
+        "TypeScript",
+        "Firebase",
+        "Playwright",
+        "Gemini"
+      ],
+      "facts": [
+        "Captures desktop, tablet and mobile screenshots",
+        "Access is restricted by Firebase email-link auth",
+        "Live at qa.roytown.net"
+      ],
+      "surprise": "A tester's helper that screenshots three screen sizes and asks Gemini what looks off.",
+      "link": "https://github.com/goggledefogger/qa-engineer-town",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "animals-on-things",
+      "name": "Animals On Things",
+      "wing": "side",
+      "years": "2025-2026",
+      "role": "builder",
+      "summary": "Upload photos of an animal and get AI-generated images of it in a style you pick or describe.",
+      "stack": [
+        "TypeScript",
+        "Firebase"
+      ],
+      "facts": [
+        "Live at animals.roytown.net",
+        "Email-link login and an image history gallery with download and delete",
+        "Planned: automated daily themed images and merchandise printing",
+        "Live at animals.roytown.net"
+      ],
+      "surprise": "Upload your pet and get it back dressed in whatever style you can dream up.",
+      "link": "https://github.com/goggledefogger/animals-on-things",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "astrolabe-apc",
+      "name": "APC AI Builders (A Portland Career) and Astrolabe",
+      "wing": "personal",
+      "years": "2025-present",
+      "role": "Co-instructor and technical lead with Dan Hahn; co-builder of Astrolabe",
+      "summary": "Astrolabe is the second-brain tool for builders, co-built with Dan Hahn inside A Portland Career's AI builders membership. Free core plus a Premium layer.",
+      "stack": [
+        "Claude Code",
+        "Obsidian",
+        "Agentic tools",
+        "Markdown",
+        "Git"
+      ],
+      "facts": [
+        "Two live cohorts ran before the cohort model became a community membership in July 2026",
+        "Coaches members in 1:1 build sessions and office hours",
+        "Cohorts 1 and 2 ran; the planned third did not"
+      ],
+      "link": "https://www.aportlandcareer.com/astrolabe/",
+      "surprise": "Two live cohorts, then Danny and Dan swapped the class for a membership with demo days.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "apc-ai-course-vault",
+      "name": "apc-ai-course-vault",
+      "wing": "brain",
+      "years": "~2025-2026",
+      "role": "Co-builder",
+      "summary": "The vault behind the AI builders course materials.",
+      "stack": [
+        "Obsidian"
+      ],
+      "facts": [
+        "Listed in the portfolio catalog",
+        "Part of the APC AI builders membership materials",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The lesson plan, as a vault.",
+      "scale": 1,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "llm-music",
+      "name": "ASCII Generative Sequencer",
+      "wing": "music",
+      "years": "2025-2026",
+      "role": "Built the browser sequencer that AI can edit in plain text",
+      "summary": "A browser music sequencer where patterns are written in a simple ASCII notation and an AI assistant can generate or change them from plain language. It has a web audio engine and effects per instrument.",
+      "stack": [
+        "React 18",
+        "TypeScript",
+        "Vite",
+        "Tone.js",
+        "Web Audio API",
+        "Supabase",
+        "Vercel",
+        "pnpm monorepo"
+      ],
+      "facts": [
+        "Ships 12 procedural drum samples and 13 genre groove templates",
+        "Patterns use X for accent, x for normal, and o for ghost notes",
+        "The AI assistant can talk to OpenAI, Anthropic, or Google Gemini",
+        "Ships 12 procedural drum samples"
+      ],
+      "surprise": "Beats are typed as X, x and o, and an AI can rewrite the groove from plain speech.",
+      "link": "https://llm-music.roytown.net/",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "aurora-game",
+      "name": "aurora-game",
+      "wing": "side",
+      "years": "~2025",
+      "role": "Builder",
+      "summary": "An AI-assisted game from the portfolio catalog.",
+      "stack": [],
+      "facts": [
+        "Listed under AI-assisted games and creative experiments",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "Northern lights, no jacket required.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "certify",
+      "name": "certify",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "The first attempt at a certification app, started in February 2025 and later reborn as Seal of Approval.",
+      "stack": [
+        "Perplexity"
+      ],
+      "facts": [
+        "Feb 2025, two commits",
+        "Had a preferences form and product evaluation view",
+        "Perplexity wired in by the second commit"
+      ],
+      "surprise": "The first try at the idea that finally became Seal of Approval.",
+      "scale": 1,
+      "status": "retired",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "chatterbox-test",
+      "name": "Chatterbox Test",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A UI wrapper for the Chatterbox open source text-to-speech and voice clone model.",
+      "stack": [
+        "Chatterbox TTS"
+      ],
+      "facts": [
+        "Clones a voice from a sample",
+        "Listed under audio/media/content tools",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "Type something, hear it in a cloned voice. Use responsibly, mostly.",
+      "link": "https://github.com/goggledefogger/chatterbox-test",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "claude-skills",
+      "name": "Claude Skills Portfolio",
+      "wing": "brain",
+      "years": "2025-2026",
+      "role": "builder",
+      "summary": "A portfolio of Agent Skills for Claude, where scripts do the deterministic work and SKILL.md orchestrates.",
+      "stack": [
+        "Python",
+        "Shell",
+        "Markdown"
+      ],
+      "facts": [
+        "Skills include disk-cleaner, satellite-image, slack-to-markdown and foley-service",
+        "Principle stated in the README: scripts first, prose second",
+        "Reusable Claude Code skills for prompt design, tool-calling and agent orchestration are published to github.com/dannybauman and adopted by Development Seed teammates"
+      ],
+      "surprise": "A portfolio built on 'scripts first, prose second', with a disk-cleaner skill included.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "doodles",
+      "name": "doodles",
+      "wing": "side",
+      "years": "~2025",
+      "role": "Builder",
+      "summary": "A small AI-assisted creative experiment from the portfolio catalog.",
+      "stack": [],
+      "facts": [
+        "Listed under AI-assisted games and creative experiments",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "Where the scribbles go to become software.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "ecoscan-wildlife-map",
+      "name": "EcoScan Wildlife Population Map",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A wildlife population heatmap, vibe coded with Google AI Studio Gemini 3 Pro.",
+      "stack": [
+        "Google AI Studio",
+        "Gemini 3 Pro"
+      ],
+      "facts": [
+        "Runs on Google Cloud Run"
+      ],
+      "surprise": "A map of where the animals are. They did not fill out the survey.",
+      "link": "https://ecoscan-wildlife-population-heatmap-903076358991.us-west1.run.app",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "etch",
+      "name": "Etch-A-Sketch",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A web Etch-A-Sketch simulation: draw with two virtual knobs, load presets, or paste and upload SVG paths for auto-draw.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ],
+      "facts": [
+        "Presets include squares, triangles and stars",
+        "Accepts pasted SVG path data or .svg uploads",
+        "Live at etch.roytown.net; draws SVGs"
+      ],
+      "surprise": "Two virtual knobs, no shaking required, and you can paste in SVG to auto-draw.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "family-game",
+      "name": "Family Treasure Game",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A family game-show experience with a guided setup, custom screens, a theme song and a finale.",
+      "stack": [
+        "JavaScript",
+        "Vite"
+      ],
+      "facts": [
+        "Guided setup gets everyone playing quickly",
+        "Has a surprise ending built into the finale",
+        "Live at family.roytown.net"
+      ],
+      "surprise": "A family game show with a theme song and a surprise ending baked into the finale.",
+      "link": "https://github.com/goggledefogger/family-game",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "freedombox-raspberry-pi",
+      "name": "FreedomBox Raspberry Pi",
+      "wing": "home",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A FreedomBox Linux base image plus custom apps to support a local network LLM.",
+      "stack": [
+        "Raspberry Pi",
+        "FreedomBox",
+        "Linux"
+      ],
+      "facts": [
+        "Aims to run an LLM on the home network"
+      ],
+      "surprise": "A tiny computer that hosts a brain for the house. It is not hungry.",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "svg-animation-town",
+      "name": "Gotham Animation Studio",
+      "wing": "side",
+      "years": "2025-2026",
+      "role": "builder",
+      "summary": "Makes SVG animations through conversation with an AI assistant instead of a timeline editor.",
+      "stack": [
+        "TypeScript",
+        "SVG"
+      ],
+      "facts": [
+        "Started from a single bat-signal SVG",
+        "Has frontend, backend and shared folders plus deployment scripts",
+        "Live at svg.roytown.net"
+      ],
+      "surprise": "Started from a single bat-signal SVG and learned to animate from a conversation.",
+      "link": "https://github.com/goggledefogger/svg-animation-town",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "hawaii-trip-planner",
+      "name": "Hawaii Kauai / Maui Trip Planner",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A trip planner for Kauai and Maui, vibe coded with Google AI Studio Gemini 3 Pro.",
+      "stack": [
+        "Google AI Studio",
+        "Gemini 3 Pro"
+      ],
+      "facts": [
+        "Live at hawaii.roytown.net"
+      ],
+      "surprise": "Planning a vacation is also work. Now the work comes with palm trees.",
+      "link": "https://hawaii.roytown.net/",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "memorabilia-helper",
+      "name": "Heirloom",
+      "wing": "side",
+      "years": "2025-2026",
+      "role": "builder",
+      "summary": "Photograph, digitize, catalog and share family memorabilia.",
+      "stack": [
+        "TypeScript",
+        "Firebase",
+        "Gemini"
+      ],
+      "facts": [
+        "Gemini restores and enhances vintage photos",
+        "Guests leave audio voice messages through magic links with no login",
+        "Live at memorabilia.roytown.net"
+      ],
+      "surprise": "Grandma's photos get restored by Gemini and shared by magic link, with voice messages from guests.",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "is-this-good-to-buy",
+      "name": "Is This Good to Buy?",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A web app for consumers that weighs products on health, environmental and ethical angles before a purchase.",
+      "stack": [
+        "Python",
+        "web frontend"
+      ],
+      "facts": [
+        "Flags allergens and ingredients relevant to health conditions",
+        "Covers sustainability and environmental impact",
+        "Also known as CertifySearch, a health, environment and ethics app"
+      ],
+      "surprise": "Checks a product's health, planet and ethics angles before you commit to the purchase.",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "pets-sorting-hat",
+      "name": "Pets Sorting Hat",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A sorting hat for pets: Gemini 2.5 Flash vision reads a photo and a personality description, and Google neural TTS announces the house.",
+      "stack": [
+        "JavaScript",
+        "Gemini 2.5 Flash",
+        "Google Cloud TTS"
+      ],
+      "facts": [
+        "Matches a description like 'brave but clumsy' to a house",
+        "Takes an upload or a camera capture",
+        "Live at sorting.roytown.net"
+      ],
+      "surprise": "Your pet's photo and a personality go in, and a Hogwarts-style house is announced aloud.",
+      "link": "https://github.com/goggledefogger/pets-sorting-hat",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "project-rocky-game-creator",
+      "name": "Project Rocky: AI Game Creator",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "An AI-powered, rules-based game engine and game creator.",
+      "stack": [
+        "TypeScript",
+        "PixiJS",
+        "Zod",
+        "Gemini"
+      ],
+      "facts": [
+        "Output is forced into JSON and validated with Zod schemas",
+        "Interactive inspector can regenerate sprites on the fly",
+        "Live at project-rocky-game-creator.web.app"
+      ],
+      "surprise": "Describe a game in plain words and an LLM writes it down as validated JSON.",
+      "link": "https://github.com/goggledefogger/project-rocky-game-creator",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "Running-Event-Discovery-Calendar",
+      "name": "Running Event Discovery Calendar",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A React prototype for finding Pacific Northwest running events, filtered in the browser from curated race data.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "Firebase"
+      ],
+      "facts": [
+        "MVP is a static client over mock data in src/utils/data.ts",
+        "Stack includes React Router 7 and Tailwind 4",
+        "Built with Kapu"
+      ],
+      "surprise": "Finding Pacific Northwest races, running entirely on mock data. Promising start.",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "bmad-satellite-viz-2",
+      "name": "Satellite Visualization Platform",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A browser-based 3D satellite visualization with an interactive Earth and live satellite positions, built with React and Three.js.",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Three.js"
+      ],
+      "facts": [
+        "Shows real-time satellite positions over a 3D Earth",
+        "Includes educational pages on satellites and orbits",
+        "Live at orbits.roytown.net"
+      ],
+      "surprise": "A 3D Earth with real satellites moving over it, plus lessons on orbits.",
+      "link": "https://github.com/goggledefogger/bmad-satellite-viz-2",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "sibling-secret-santa",
+      "name": "Sibling Secret Santa 2025",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A Secret Santa app for the siblings, vibe coded with Google AI Studio Gemini 3 Pro.",
+      "stack": [
+        "Google AI Studio",
+        "Gemini 3 Pro"
+      ],
+      "facts": [
+        "Live at santa.roytown.net",
+        "Listed under AI-assisted games and creative experiments",
+        "Public repo on goggledefogger",
+        "The name carries the year 2025"
+      ],
+      "surprise": "Secret Santa for siblings, where no one can peek and everyone tries.",
+      "link": "https://santa.roytown.net/",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "smugglers-town-ai-gemini",
+      "name": "Smuggler's Town AI",
+      "wing": "side",
+      "years": "2025-2026",
+      "role": "builder",
+      "summary": "A real-time multiplayer proof of concept: vehicles race for items on a real-world map, built with React, PixiJS, MapLibre and Colyseus.",
+      "stack": [
+        "TypeScript",
+        "React",
+        "PixiJS",
+        "MapLibre",
+        "Colyseus"
+      ],
+      "facts": [
+        "Map is centered on Times Square, NYC",
+        "Movement is server-authoritative with client-side interpolation"
+      ],
+      "surprise": "Multiplayer car races centred on Times Square, with the server calling the shots.",
+      "link": "https://github.com/goggledefogger/smugglers-town-ai-gemini",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "smugglers-town-ai-gpt-41",
+      "name": "Smuggler's Town: Real-World Map CTF Racer",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A browser top-down capture-the-flag car game on a real-world map, built for instant-play multiplayer with React and Pixi.js.",
+      "stack": [
+        "TypeScript",
+        "React",
+        "Pixi.js"
+      ],
+      "facts": [
+        "Sibling of smugglers-town-ai-gemini in the Smuggler's Town family",
+        "README pitches low-latency multiplayer fun"
+      ],
+      "surprise": "The GPT-4.1 sibling in the Smuggler's Town family, racing for flags on a real map.",
+      "link": "https://github.com/goggledefogger/smugglers-town-ai-gpt-41",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "space-elevator",
+      "name": "space-elevator",
+      "wing": "side",
+      "years": "~2025",
+      "role": "Builder",
+      "summary": "An AI-assisted creative experiment from the portfolio catalog.",
+      "stack": [],
+      "facts": [
+        "Listed under AI-assisted games and creative experiments",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "Going up. Way up.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "bmad-escape-room-browser-lab-gemini",
+      "name": "The Browser Lab",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A five-minute web escape room that teaches browser DevTools basics: console, CSS inspector and network tab.",
+      "stack": [
+        "Svelte"
+      ],
+      "facts": [
+        "Three puzzles covering the console, the CSS inspector and the network tab",
+        "README says it was built with the BMad Method and agentic AI",
+        "Teaches the browser dev tools as a game, built with the BMAD method"
+      ],
+      "surprise": "An escape room where the console, the CSS inspector and the network tab are the clues.",
+      "link": "https://github.com/goggledefogger/bmad-escape-room-browser-lab-gemini",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "bmad-escape-room-claude",
+      "name": "The Night Train Compartment",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A five-minute accessible digital escape room, WCAG 2.1 AA target, built with Next.js and Tailwind.",
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind"
+      ],
+      "facts": [
+        "README claims WCAG 2.1 AA compliance",
+        "Part of a BMad escape-room pair with The Browser Lab"
+      ],
+      "surprise": "A five-minute escape room built to meet WCAG 2.1 AA accessibility goals.",
+      "link": "https://github.com/goggledefogger/bmad-escape-room-claude",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "oregon-tail-with-cats",
+      "name": "The Oregon Tail, with Cats",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "The classic 90s Oregon Trail, but with cats, vibe coded with Google AI Studio Gemini 3 Pro.",
+      "stack": [
+        "Google AI Studio",
+        "Gemini 3 Pro"
+      ],
+      "facts": [
+        "Runs on Google Cloud Run"
+      ],
+      "surprise": "You have died of dysentery. The cats are fine, and judging you.",
+      "link": "https://the-oregon-tail-385400273138.us-west1.run.app/",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "cabin-deep-dive",
+      "name": "The Cabin Deep Dive",
+      "wing": "side",
+      "years": "2025",
+      "role": "Builder",
+      "summary": "A visitor guide for a family cabin, vibe coded with Google AI Studio Gemini 3 Pro.",
+      "stack": [
+        "Google AI Studio",
+        "Gemini 3 Pro"
+      ],
+      "facts": [
+        "Runs on Google Cloud Run"
+      ],
+      "surprise": "A guest guide for a cabin. Even the amenities get a chapter.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "veda-dashboard",
+      "name": "VEDA dashboard",
+      "wing": "work",
+      "years": "~2025-2026",
+      "role": "Dashboard team work",
+      "summary": "Front end for NASA's VEDA platform, built at Development Seed.",
+      "stack": [
+        "TiTiler",
+        "TiTiler-CMR",
+        "GIBS",
+        "Jupyter"
+      ],
+      "facts": [
+        "Aug 2026: EIE switched to GIBS WMTS for visuals and TiTiler-CMR for stats, because TiTiler-CMR cannot tile OPERA at 30m"
+      ],
+      "surprise": "NASA Earth data, served through a front end Danny's team helped build.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "vocal-range-explorer",
+      "name": "Vocal Range Explorer",
+      "wing": "music",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A web app that estimates your vocal classification (tenor, baritone, soprano) from live pitch detection and AI analysis.",
+      "stack": [
+        "TypeScript",
+        "Web Audio API"
+      ],
+      "facts": [
+        "Pitch comes from autocorrelation on the microphone",
+        "A tuner-style screen helps you hold the target note",
+        "Live at vocal.roytown.net; vibe coded with Google AI Studio Gemini 3 Pro"
+      ],
+      "surprise": "Sing into the mic and it works out whether you are a tenor, baritone or soprano.",
+      "link": "https://github.com/dannybauman/Vocal-Range-Explorer",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "web-maps-navigator",
+      "name": "Web Maps Navigator",
+      "wing": "work",
+      "years": "2025",
+      "role": "Built the guide",
+      "summary": "A tool that helps teams choose which web map technology to use for their project.",
+      "stack": [
+        "JavaScript"
+      ],
+      "facts": [
+        "Made at Development Seed"
+      ],
+      "surprise": "Choosing a map library, minus the arguing about it.",
+      "scale": 1,
+      "status": "shipped",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "wheel-of-town",
+      "name": "Wheel of Town",
+      "wing": "side",
+      "years": "2025",
+      "role": "builder",
+      "summary": "A browser word-puzzle game against two opponents, with a 3D wheel and a letter board.",
+      "stack": [
+        "JavaScript",
+        "React",
+        "three.js"
+      ],
+      "facts": [
+        "Live at wheel.roytown.net",
+        "README tagline: where Roys bring the puzzles, the prizes, and the occasional bankruptcy",
+        "Live at wheel.roytown.net"
+      ],
+      "surprise": "A word-puzzle wheel with 'the occasional bankruptcy' written right into its README.",
+      "link": "https://github.com/goggledefogger/wheel-of-town",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "work-assistant",
+      "name": "work-assistant",
+      "wing": "side",
+      "years": "~2025",
+      "role": "Builder",
+      "summary": "A consumer AI tool listed in the portfolio catalog.",
+      "stack": [],
+      "facts": [
+        "Listed under opinionated consumer AI tools",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The coworker who never asks for a raise.",
+      "scale": 1,
+      "status": "shipped",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "vault-3d-printing",
+      "name": "3d-printing-vault",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Builder",
+      "summary": "A second-brain vault for 3D printing, from the portfolio catalog.",
+      "stack": [
+        "Obsidian"
+      ],
+      "facts": [
+        "Listed in the portfolio catalog",
+        "Part of the AI/agent-tooling family",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The filament has its own knowledge base.",
+      "scale": 1,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "town-center",
+      "name": "Agent Activity Bus",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A personal dashboard that tracks what AI development agents are doing across GitHub repos.",
+      "stack": [
+        "TypeScript"
+      ],
+      "facts": [
+        "GitHub webhooks capture commits, pushes and PR merges",
+        "A cheap, fast model summarizes project status on demand"
+      ],
+      "surprise": "A webhook-fed dashboard that lets a cheap, fast model summarise what the agents did today.",
+      "link": "https://github.com/goggledefogger/town-center",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "agent-viewer-town",
+      "name": "Agent Viewer Town",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A real-time pixel-art workshop that animates Claude Code sessions and agent teams, driven by Claude Code hooks.",
+      "stack": [
+        "TypeScript",
+        "Claude Code hooks",
+        "Playwright"
+      ],
+      "facts": [
+        "Has a team mode for several agents working together",
+        "Includes a Touch Bar dev folder and a macOS launcher AppleScript"
+      ],
+      "surprise": "Claude Code sessions become tiny pixel workers in a little animated workshop.",
+      "link": "https://github.com/goggledefogger/agent-viewer-town",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "agentic-ai-patterns",
+      "name": "Agentic AI Patterns",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A public library of 229 lessons from building software with coding agents, written as a map rather than a standard.",
+      "stack": [
+        "Markdown"
+      ],
+      "facts": [
+        "229 pattern files, one lesson each, under patterns/",
+        "README: 'This is a map, not a standard'"
+      ],
+      "surprise": "229 lessons on building with coding agents, with a modest 'this is a map, not a standard'.",
+      "link": "https://github.com/goggledefogger/agentic-ai-patterns",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "udemy-agentic-engineering",
+      "name": "Agentic Expedition Assistant",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A learning command center for an agentic engineering course: field notes, labs, and a local dashboard.",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "Jupyter"
+      ],
+      "facts": [
+        "Dashboard launches with uv run dashboard/server.py",
+        "Sets a learning-first mandate: understanding over pure execution"
+      ],
+      "surprise": "A course companion whose mandate is understanding over pure execution.",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "ai-at-devseed",
+      "name": "AI at DevSeed",
+      "wing": "work",
+      "years": "2026",
+      "role": "~Pairing sessions and guideline input",
+      "summary": "Paired with teammates on AI-assisted workflows and contributed to Development Seed's open AI guidelines.",
+      "stack": [
+        "AI practice",
+        "local models"
+      ],
+      "facts": [
+        "Paired with teammates on AI-assisted workflows",
+        "Contributed to Development Seed's open AI guidelines",
+        "A local-models thread covers running small models, with a solar-powered box idea"
+      ],
+      "surprise": "AI pairing, open guidelines, and a solar-powered-box idea.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "apc-content-engine",
+      "name": "APC AI Content Engine",
+      "wing": "personal",
+      "years": "2026",
+      "role": "Built the content marketing machine with Dan; works the pipeline from source to published output",
+      "summary": "A vault and pipeline that turns course material into a content blueprint, then into editable proofs and rendered articles. Built from a 2026-04-30 working session with Dan.",
+      "stack": [
+        "Obsidian",
+        "TypeScript",
+        "Vitest",
+        "Claude Code hooks"
+      ],
+      "facts": [
+        "Lifecycle runs Concept, then Planned piece, then Proof, then Output",
+        "An August 2026 snapshot screened 20 pieces down to 4 publish-ready ones",
+        "A CI gate caught a dead booking button that every article had scanned clean as"
+      ],
+      "surprise": "A CI gate caught a dead booking button that every article had scanned clean.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "apc-second-brain-kit",
+      "name": "APC Second Brain Starter Kit",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Built the gated distribution site for the pilot starter kit",
+      "summary": "A password-gated Firebase site that hands out the second-brain pilot kit: a setup guide plus two starter files. The gate is a bcrypt password with a signed cookie, served from a Cloud Function.",
+      "stack": [
+        "Firebase Hosting",
+        "Firebase Cloud Functions",
+        "bcrypt",
+        "jose"
+      ],
+      "facts": [
+        "Firebase Hosting is static, so nothing protected sits in the public folder",
+        "The gate is ported from the decision-art reader gate and uses a 7-day cookie",
+        "The kit is gated on purpose because it is not ready for unapproved pilots yet"
+      ],
+      "surprise": "A starter kit locked behind a password on purpose, because it is not quite ready for company.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "astrolabe-dashboard",
+      "name": "Astrolabe (Second Brain Dashboard)",
+      "wing": "brain",
+      "years": "2026",
+      "role": "Co-designed with Dan Hahn; Danny drives the build and the board",
+      "summary": "A local web app that shows a live Claude Code session humanely: chat in the center, the second brain working visibly around it. Designed in a working session on 2026-08-06 and building since 2026-08-12.",
+      "stack": [
+        "Local web server",
+        "Claude Code",
+        "JavaScript",
+        "GitHub Projects"
+      ],
+      "facts": [
+        "Its GitHub issues are the Astrolabe board",
+        "The roadmap uses the same four columns Dan asked for on the APC board, plus a collapsed bucket for ideas not doing yet",
+        "Member and client names are kept out of issue titles and bodies by rule"
+      ],
+      "surprise": "A dashboard where you watch a second brain think, sketched in a working session in one August day.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "link": "aportlandcareer.com/astrolabe",
+      "sources": [
+        "resume"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "obsidian-claude",
+      "name": "Claude Code + Obsidian",
+      "wing": "brain",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A patterns library: guides, patterns, and Obsidian and Claude Code scripts.",
+      "stack": [
+        "Python",
+        "Shell",
+        "Markdown"
+      ],
+      "facts": [
+        "Includes a leak check that scans for private names, emails and paths",
+        "Has a theme script that applies a Catppuccin-based preset to any vault"
+      ],
+      "surprise": "Comes with a leak check that scans for names, emails and paths. Paranoid, nicely.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "devnow-obsidian",
+      "name": "DevNow-Obsidian",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Builder",
+      "summary": "An Obsidian vault for DevelopmentNow work, from the portfolio catalog.",
+      "stack": [
+        "Obsidian"
+      ],
+      "facts": [
+        "Listed in the portfolio catalog",
+        "Part of the AI/agent-tooling family",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The old agency gets its own second brain.",
+      "scale": 1,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "every-day-health",
+      "name": "Every Day Health",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A Next.js health check-in app: a chat interface feeds a Scribe agent that extracts entries for you to confirm and store.",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Tailwind"
+      ],
+      "facts": [
+        "Task list tracks Supabase schema, auth, chat interface, and the Scribe agent through phases 1 and 2",
+        "Includes automated tests"
+      ],
+      "surprise": "You chat with it, a Scribe agent takes notes, and you approve each entry.",
+      "link": "https://github.com/goggledefogger/every-day-health",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "filament-gallery",
+      "name": "Filament Collection Town",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A visual color reference for a 3D-printing filament collection, filterable by material.",
+      "stack": [
+        "HTML"
+      ],
+      "facts": [
+        "Dark-mode gallery filterable by material type",
+        "Hosted on GitHub Pages"
+      ],
+      "surprise": "A swatch book for 3D-printer filament, rendered in dark mode.",
+      "link": "https://github.com/goggledefogger/filament-gallery",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "gemini-vision-theremin",
+      "name": "Gemini Vision Theremin",
+      "wing": "music",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A webcam theremin: hand position maps to pitch and volume through WebAudio, with MediaPipe hand tracking.",
+      "stack": [
+        "TypeScript",
+        "MediaPipe",
+        "WebAudio"
+      ],
+      "facts": [
+        "Deployed at theremin.roytown.net",
+        "Includes an AI preset feature",
+        "Vibe coded with Google AI Studio Gemini 3 Pro"
+      ],
+      "surprise": "Wave your hand at the webcam and a theremin sings. No instrument required.",
+      "link": "https://github.com/goggledefogger/gemini-vision-theremin",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "granola-helper",
+      "name": "Granola Transcript Export",
+      "wing": "side",
+      "years": "2026",
+      "role": "helper",
+      "summary": "A small Node script, with step-by-step instructions, for exporting Granola meeting transcripts from a second Mac.",
+      "stack": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "facts": [
+        "Built for the other Mac where Granola is actively logging meetings",
+        "README walks through clone, Node install, then run",
+        "Public repo on goggledefogger",
+        "Companion to granola-helper"
+      ],
+      "surprise": "A tiny script to rescue meeting transcripts from the other Mac.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "groundstation",
+      "name": "groundstation",
+      "wing": "work",
+      "years": "2026",
+      "role": "Builder of the Labs prototype",
+      "summary": "An MCP server and Claude skill that searches the cloud-native geospatial stack and briefs you on what changed. It was built as a DevSeed Labs prototype and published as a public repo.",
+      "stack": [
+        "MCP",
+        "STAC",
+        "TiTiler",
+        "Claude skills",
+        "web console",
+        "Python"
+      ],
+      "facts": [
+        "Built July 9, 2026; 16 tools with 13/13 live evals and 69 offline evals",
+        "~A/B test of modular vs central tool config: modular was ~1.75x slower and equally correct",
+        "Plugin reached version 0.4.10 after two waves of PRs in late July",
+        "Ships an MCP server and a Claude skill together"
+      ],
+      "surprise": "Sixteen tools, 13 of 13 live evals passed, and a public repo built in a single July day.",
+      "link": "https://github.com/dannybauman/groundstation",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "handshapes-trainer",
+      "name": "Handshapes trainer",
+      "wing": "music",
+      "years": "~2026",
+      "role": "Built the self-paced chord-shape trainer",
+      "summary": "A terminal trainer that walks left-hand chord shapes in the order a song plays them. It will not let a rushed rep count, so the tempo stays slow and honest.",
+      "stack": [
+        "Python (stdlib)",
+        "ChordPro"
+      ],
+      "facts": [
+        "It advances on clean slow reps, not on a clock",
+        "It reads chord order straight from the song's ChordPro file",
+        "It was built because time-synced playback makes you race"
+      ],
+      "surprise": "A chord trainer that refuses to count a rushed rep. Tough love for left hands.",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "house-hub-screen",
+      "name": "House Hub touch screen",
+      "wing": "home",
+      "years": "~2026",
+      "role": "Designed the touch layout and gesture rules for the wall screen",
+      "summary": "The House Hub screen mode for a 10.1-inch 1280x800 Android kiosk. It uses big touch targets, one gesture map for every page, and Chrome 44 compatible JavaScript so it never goes blank on the old WebView.",
+      "stack": [
+        "Android 6.0.1",
+        "WebView (Chromium 106)",
+        "Hammer.js",
+        "ES5 JavaScript"
+      ],
+      "facts": [
+        "Primary buttons are 48 to 58 pixels tall, with the header 88 to 108 pixels",
+        "The left 64 pixels belong to the app's nav drawer, so no control lives there",
+        "A pre-push check runs node --check on every inline script and scans for undefined onclick handlers"
+      ],
+      "surprise": "Buttons are 48 to 58 pixels tall and the left 64 pixels are off-limits. Fat fingers rule.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "lifebot",
+      "name": "LifeBot",
+      "wing": "home",
+      "years": "2026",
+      "role": "Builder",
+      "summary": "A personal second brain for household life, with sensitivity-tiered access for the agents that read it.",
+      "stack": [
+        "Obsidian",
+        "Claude Code",
+        "Python",
+        "AI agents"
+      ],
+      "facts": [
+        "Private, shown here only as a category",
+        "Built for individuals and households",
+        "Includes always-on AI agents for capture, coordination and daily ops"
+      ],
+      "surprise": "A household second brain whose agents only read what each note's tier allows.",
+      "scale": 3,
+      "status": "active",
+      "sources": [
+        "personal notes",
+        "resume"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "magic-broom-chat",
+      "name": "Magic Broom Chat",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A Zulip-style chat app built four times, once per AI-assisted development framework, as a course comparison.",
+      "stack": [
+        "TypeScript",
+        "Markdown"
+      ],
+      "facts": [
+        "Four folders: bmad, compound, superpowers, vanilla",
+        "Companion project for a course on AI-assisted software development, with a devlog"
+      ],
+      "surprise": "The same chat app built four times, once per AI-coding method. Spot the differences.",
+      "link": "https://github.com/goggledefogger/magic-broom-chat",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "raspberry-marvin",
+      "name": "MARVIN",
+      "wing": "brain",
+      "years": "2026",
+      "role": "Built the chief-of-staff bot that runs on a Raspberry Pi",
+      "summary": "MARVIN is an AI chief of staff that remembers conversations, tracks goals, and writes summaries. It runs around the clock on a Raspberry Pi with a web dashboard and an interactive terminal.",
+      "stack": [
+        "Raspberry Pi",
+        "Claude Code",
+        "ttyd",
+        "Web dashboard",
+        "Shell"
+      ],
+      "facts": [
+        "Private state, sessions, and reports are kept out of git on purpose",
+        "Offers a live web terminal, so the bot can be driven from a browser",
+        "Lives in a single unified workspace folder",
+        "Lives in one ~/marvin workspace with CLAUDE.md and hooks"
+      ],
+      "surprise": "A chief of staff on a Raspberry Pi that remembers conversations around the clock.",
+      "scale": 2,
+      "status": "active",
+      "link": "https://github.com/goggledefogger/raspberry-marvin",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "marvin-template",
+      "name": "marvin-template",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Builder",
+      "summary": "A reusable Marvin agent template, parent of raspberry-marvin in the portfolio catalog's agent tooling family.",
+      "stack": [],
+      "facts": [
+        "Listed in the portfolio catalog",
+        "Part of the AI/agent-tooling family",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "The mold that Marvin was cast from.",
+      "scale": 1,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "music-second-brain",
+      "name": "Music second brain",
+      "wing": "music",
+      "years": "~2026",
+      "role": "Owns the Obsidian vault for learning, covering, and arranging songs",
+      "summary": "An Obsidian vault for making and practicing music, where Claude reads the house rules and a practice profile each session and adapts the plan. Songs live as ChordPro files that feed every trainer face.",
+      "stack": [
+        "Obsidian",
+        "ChordPro",
+        "Python (stdlib)",
+        "reportlab",
+        "Claude Code"
+      ],
+      "facts": [
+        "One .cho file per song is the source of truth for the terminal, web, and PDF trainers",
+        "Voice capture is transcribed locally on the machine",
+        "The first song in the vault is a Tangled duet played at capo 8"
+      ],
+      "surprise": "Every song is a single ChordPro file, and the first one was a Tangled duet at capo 8.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "openclaw-setup",
+      "name": "OpenClaw Setup Workshop (the aliens)",
+      "wing": "brain",
+      "years": "2026",
+      "role": "Builds and runs the personal AI assistants on Raspberry Pis",
+      "summary": "The repo where Danny builds personal AI assistants called aliens that run on Raspberry Pis and talk over Telegram. Sheila is the primary one; Hopper handles intake and routing.",
+      "stack": [
+        "Raspberry Pi 5",
+        "Telegram",
+        "Hermes",
+        "Shell",
+        "Docker",
+        "Python",
+        "Raspberry Pi"
+      ],
+      "facts": [
+        "Migrated from OpenClaw to Hermes on 2026-04-10",
+        "Each alien has its own home folder for hardware, channel, and model config",
+        "A new alien is a template fill plus a render script",
+        "Two aliens so far: Sheila (primary) and Hopper"
+      ],
+      "surprise": "Personal AI assistants called 'aliens' live on Raspberry Pis and chat over Telegram.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "pet-care-guide",
+      "name": "Pet Care Guide",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A mobile-friendly daily checklist for pet feeding and care, split into morning, afternoon and evening routines.",
+      "stack": [
+        "TypeScript",
+        "Vite",
+        "Firebase"
+      ],
+      "facts": [
+        "Checklist state persists in localStorage",
+        "Live on Firebase Hosting"
+      ],
+      "surprise": "A pet-feeding checklist that remembers who ate, saved right in the browser.",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "roy-chief-of-staff",
+      "name": "Roy",
+      "wing": "brain",
+      "years": "2026",
+      "role": "Designed and builds the chief-of-staff agent that routes Danny's work",
+      "summary": "Danny's chief-of-staff agent: a thin router that knows where each thing lives and how sensitive it is, and holds pointers and summaries, never the contents. Works directly at the desk behind deterministic safety gates.",
+      "stack": [
+        "Claude Code",
+        "Hooks",
+        "Python (uv)",
+        "Markdown registry"
+      ],
+      "facts": [
+        "Every request gets a sensitivity tier before any action; the tier is the routing key",
+        "Holds a registry of pointers and tiers, never the files behind them",
+        "Epic 1 is built; the first live win is the calendar brief",
+        "Part of the AI/agent-tooling family"
+      ],
+      "surprise": "A chief of staff that holds pointers and tiers, never the contents. Very discreet.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "seal-of-approval",
+      "name": "Seal of Approval",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A recommendations site where real people put their name on things they recommend, with reasons attached and no AI, ads or algorithm.",
+      "stack": [
+        "Markdown",
+        "Python"
+      ],
+      "facts": [
+        "Three verdicts: Seal (recommend), Gold star (at most one per list), Avoid (needs a written reason)",
+        "No scores, rankings or feed decide what a reader sees"
+      ],
+      "surprise": "No AI, no ads, no algorithm: just a real person's name on a recommendation.",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "sheet-music-soloist",
+      "name": "Sheet Music Soloist",
+      "wing": "music",
+      "years": "~2026",
+      "role": "Built the pipeline that reads sheet music images into scores",
+      "summary": "A project that uses vision models to read sheet music from images, cross-check the reads, and generate a score. It has a small frontend and Python and Node tooling.",
+      "stack": [
+        "Python",
+        "Node.js",
+        "Vision models",
+        "Frontend"
+      ],
+      "facts": [
+        "~Cross-validation scripts check one vision read against another",
+        "~Has a generated output folder and sample inputs",
+        "Has no README yet, so the pipeline is documented only by its scripts"
+      ],
+      "surprise": "Two vision-model reads check each other's homework on a sheet of music. No README, though.",
+      "scale": 2,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "sheila-house-hub",
+      "name": "Sheila's House Hub",
+      "wing": "home",
+      "years": "~2026",
+      "role": "Owns the Pi-hosted house hub and its screen mode",
+      "summary": "Sheila is the house hub on a Raspberry Pi. She runs Home Assistant, hosts the photo library for the frame, and serves the House Hub screen pages to the touch display.",
+      "stack": [
+        "Raspberry Pi 5",
+        "Home Assistant",
+        "nginx",
+        "Docker"
+      ],
+      "facts": [
+        "Home Assistant runs as a container on the Pi and drives the photo frame's page",
+        "Sheila serves the photo library over a local nginx container",
+        "Any asset Sheila serves has to answer within 5 seconds or the frame falls back"
+      ],
+      "surprise": "The house hub is a Pi that must answer within five seconds or the photo frame gives up.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "sources": [
+        "resume",
+        "personal notes"
+      ],
+      "rediscovered": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "skills-gallery",
+      "name": "Skills Gallery",
+      "wing": "brain",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A visual showcase gallery for Agent Skills, with a trust panel shown before any install.",
+      "stack": [
+        "JavaScript"
+      ],
+      "facts": [
+        "Deployed once per audience: personal/public, DevSeed, AI course",
+        "Each card shows what a skill touches (shell, network, curl | bash) before install"
+      ],
+      "surprise": "Every card shows what a skill touches, like shell or curl, before you click install.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "skills-town",
+      "name": "Skills Town",
+      "wing": "brain",
+      "years": "2026",
+      "role": "builder",
+      "summary": "Public, audited Agent Skills you can install across tools, each checked for personal data and readiness before publishing.",
+      "stack": [
+        "Python"
+      ],
+      "facts": [
+        "Showcased at the Skills Gallery",
+        "Private, in-progress skills live elsewhere and are not published here"
+      ],
+      "surprise": "A showcase of installable skills, each audited for personal data before it goes public.",
+      "link": "https://github.com/goggledefogger/skills-town",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "smart-connections-mcp",
+      "name": "Smart Connections MCP",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Maintains the fork that gives Claude semantic search over Obsidian vaults",
+      "summary": "An MCP server that lets Claude search, graph, and read Obsidian notes using Smart Connections embeddings. Danny's fork adds true semantic search by embedding the query with the vault's own model.",
+      "stack": [
+        "Node.js",
+        "MCP",
+        "Obsidian",
+        "384-dim embeddings (bge-micro-v2)"
+      ],
+      "facts": [
+        "Forked from Daniel Glickman's MIT-licensed original, with its license kept intact",
+        "Works on 384-dimensional vectors from the TaylorAI bge-micro-v2 model",
+        "Can build multi-level connection graphs between notes by meaning, not keywords"
+      ],
+      "surprise": "Gave Claude a way to find notes by meaning rather than keywords, using a tiny 384-number fingerprint.",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "smugglers-town-3d",
+      "name": "Smugglers Town 3D: World Tour",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "A 3D car-combat crate race: eight cars, four crates, two bases, first team to five deliveries wins.",
+      "stack": [
+        "TypeScript",
+        "Vite",
+        "Firebase"
+      ],
+      "facts": [
+        "Starts on a procedural desert with no setup",
+        "With a Google Maps API key it moves to real places, with elevation, satellite imagery and photorealistic buildings"
+      ],
+      "surprise": "Eight cars, four crates, two bases and, with a Maps key, real photorealistic cities.",
+      "link": "https://github.com/goggledefogger/smugglers-town-3d",
+      "scale": 2,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "photo-frame",
+      "name": "Spacement Photo Frame",
+      "wing": "home",
+      "years": "~2026",
+      "role": "Built and runs the Android kiosk frame, its app, and its nightly globe film",
+      "summary": "A 10.1-inch Android picture frame on a Model 102K board, running Danny's own kiosk app. It shows photos, a live globe, and a turntable globe filmed nightly from Astrolabe.",
+      "stack": [
+        "Android",
+        "ADB",
+        "Java",
+        "Chromium WebView",
+        "Python",
+        "launchd"
+      ],
+      "facts": [
+        "Frame Kiosk, Danny's own app, became the home screen on 2026-09-22",
+        "A nightly job at 03:30 films the real Astrolabe globe into a turntable video, but only when the globe changed",
+        "The frame can hold three globes, and Danny asked for the classic one to stay"
+      ],
+      "surprise": "Every night at 3:30 it films a turntable globe, but only if the globe changed.",
+      "scale": 3,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "survivor-bracket-bingo",
+      "name": "Survivor Bracket Bingo",
+      "wing": "side",
+      "years": "2026",
+      "role": "builder",
+      "summary": "Bracket draft, bingo and scoreboard for Survivor Season 50 watch parties, with a Fijian-inspired look.",
+      "stack": [
+        "JavaScript",
+        "Vite",
+        "Firebase"
+      ],
+      "facts": [
+        "Fan-made tool, explicitly not affiliated with CBS",
+        "Needs your own Firebase config in .env to run"
+      ],
+      "surprise": "A bracket draft and bingo card for Survivor watch parties with Fijian styling.",
+      "link": "https://github.com/goggledefogger/survivor-bracket-bingo",
+      "scale": 1,
+      "status": "quiet",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "backup-generator",
+      "name": "Westinghouse iGen4500DF generator",
+      "wing": "home",
+      "years": "~2026",
+      "role": "Owns the backup power plan and its runbook",
+      "summary": "A dual-fuel inverter generator for backup power at home. It runs on gasoline or propane, is rated 3,700 running watts, and is 120-volt only.",
+      "stack": [
+        "Gasoline",
+        "Propane",
+        "120V inverter"
+      ],
+      "facts": [
+        "Gasoline gives about 15 hours at half load on a 3.4 gallon tank",
+        "Rated 3,700 running watts and 4,500 starting watts on gasoline",
+        "No 240-volt output, so no dryer, range, well pump, or EV charger"
+      ],
+      "surprise": "3,700 running watts and absolutely no way to run the dryer or the well pump.",
+      "scale": 1,
+      "status": "active",
+      "added": "2026-10-07",
+      "founding": true
+    },
+    {
+      "id": "will-smith-collab-vault",
+      "name": "will-smith-collab-vault",
+      "wing": "brain",
+      "years": "~2026",
+      "role": "Builder",
+      "summary": "A collaboration vault listed under the AI/agent-tooling family in the portfolio catalog.",
+      "stack": [
+        "Obsidian"
+      ],
+      "facts": [
+        "Listed in the portfolio catalog",
+        "Public repo on goggledefogger",
+        "Exact date not in the corpus"
+      ],
+      "surprise": "A shared notebook for two builders.",
+      "scale": 1,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    },
+    {
+      "id": "yoga-bot",
+      "name": "Yogabot",
+      "wing": "home",
+      "years": "2026",
+      "role": "Builder / operator",
+      "summary": "A Hermes agent deployed on Linode, one of two production agents Danny runs.",
+      "stack": [
+        "Hermes",
+        "Linode"
+      ],
+      "facts": [
+        "Runs continuously in production",
+        "One of two production Hermes agents, the other is Sheila",
+        "Dated 2026-05 in the portfolio catalog"
+      ],
+      "surprise": "An actual agent in production, not a demo.",
+      "scale": 2,
+      "status": "active",
+      "sources": [
+        "personal notes"
+      ],
+      "added": "2026-10-07"
+    }
+  ]
+}
