@@ -532,9 +532,26 @@ export function buildWorld(scene, data, renderer) {
 
   // ---------- per-frame life ----------
   const glowBase = style().materials.exhibitEmissive;
-  world.update = (t, dt, nearest) => {
+  const MAX_ANIM_DIST_SQ = 45 * 45;
+  world.activeCount = 0;
+  world.update = (t, dt, nearest, playerPos) => {
+    let active = 0;
+    const px = playerPos?.x, pz = playerPos?.z;
+    const hasPlayer = px != null && pz != null;
+
     for (const e of world.exhibits) {
       const near = e === nearest;
+      const cooling = e.glow > 0.005;
+
+      if (hasPlayer && !near && !cooling) {
+        const dx = e.pos.x - px;
+        const dz = e.pos.z - pz;
+        if (dx * dx + dz * dz > MAX_ANIM_DIST_SQ) {
+          continue;
+        }
+      }
+
+      active++;
       e.glow += ((near ? 1 : 0) - e.glow) * Math.min(1, dt * 5);
       e.obj.rotation.y += dt * e.spin * (1 + e.glow * 1.5);
       e.obj.position.y = e.baseY + Math.sin(t * 1.3 + e.phase) * (0.06 + e.glow * 0.16);
@@ -544,6 +561,8 @@ export function buildWorld(scene, data, renderer) {
       e.obj.scale.setScalar(s);
       e.plaque.rotation.z = Math.sin(t * 0.8 + e.phase) * 0.045;
     }
+    world.activeCount = active;
+    return active;
   };
   return world;
 }

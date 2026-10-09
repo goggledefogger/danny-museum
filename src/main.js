@@ -10,6 +10,7 @@ import { Acquisitions } from './acquisitions.js';
 import { computeFresh, countSince, LAST_VISIT } from './fresh.js';
 import { loadTheme, style, palette, t, applyCss, applyCopy, loadFonts } from './theme.js';
 import { chooseTheme } from './picker.js';
+import { PerfMonitor } from './perf.js';
 
 const BASE_FOV = 70;
 const NEAR_EXHIBIT = 3.5;
@@ -66,6 +67,7 @@ const player = new Player(camera, renderer.domElement, world);
 const funhouse = new Funhouse(scene, world, hud);
 const acq = new Acquisitions(scene, world);
 const minimap = new Minimap(document.getElementById('minimap'), world);
+const perf = new PerfMonitor(renderer);
 const tour = new Tour(player, world.tourPath, () => { mode = 'menu'; hud.setTour(false); hud.showOverlay(true, true); });
 
 player.teleport(world.spawn);
@@ -237,6 +239,7 @@ addEventListener('resize', () => {
 // ---------- loop ----------
 const clock = new THREE.Clock();
 function frame() {
+  perf.begin();
   const dt = Math.min(0.05, clock.getDelta());
   const t = clock.elapsedTime;
   if (mode === 'tour') tour.update(dt);
@@ -248,7 +251,7 @@ function frame() {
 
   nearest = player.frozen ? null : nearestExhibit(pos);
   hud.showExhibit(nearest, nearest ? visited.has(nearest.project.id) : false);
-  world.update(t, dt, nearest);
+  const activeExhibits = world.update(t, dt, nearest, pos);
 
   const atFactory = funhouse.nearFactory(pos) && mode !== 'tour';
   hud.prompt(atFactory && !nearest ? t('factoryPrompt') : null);
@@ -264,12 +267,14 @@ function frame() {
 
   minimap.draw(pos, player.yaw, visited, nearest);
   renderer.render(scene, camera);
+  perf.end(activeExhibits, world.exhibits.length);
   requestAnimationFrame(frame);
 }
 frame();
 
 // ---------- debug hooks ----------
 window.__museum = {
+  perf,
   start: () => { startFree(); return true; },
   teleport: id => { if (mode === 'menu') startFree(); return teleportTo(id); },
   tour: () => { startTour(); return true; },

@@ -32,6 +32,20 @@ export class Minimap {
   map(x, z) { return [this.size / 2 + (x - this.cx) * this.scale, this.size / 2 + (z - this.cz) * this.scale]; }
 
   draw(pos, yaw, visited, nearest) {
+    if (
+      this.lastPos &&
+      Math.hypot(pos.x - this.lastPos.x, pos.z - this.lastPos.z) < 0.04 &&
+      Math.abs(yaw - this.lastYaw) < 0.01 &&
+      nearest === this.lastNearest &&
+      visited.size === this.lastVisitedSize
+    ) {
+      return;
+    }
+    this.lastPos = { x: pos.x, z: pos.z };
+    this.lastYaw = yaw;
+    this.lastNearest = nearest;
+    this.lastVisitedSize = visited.size;
+
     const { ctx, size } = this;
     const P = palette();
     this.cx = pos.x; this.cz = pos.z;
