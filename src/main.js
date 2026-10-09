@@ -243,17 +243,17 @@ const clock = new THREE.Clock();
 function frame() {
   perf.begin();
   const dt = Math.min(0.05, clock.getDelta());
-  const t = clock.elapsedTime;
+  const time = clock.elapsedTime;
   if (mode === 'tour') tour.update(dt);
   else if (mode === 'walk' || mode === 'free') player.update(dt);
 
   const pos = player.position;
-  funhouse.update(dt, t, player);
-  acq.update(t);
+  funhouse.update(dt, time, player);
+  acq.update(time);
 
   nearest = player.frozen ? null : nearestExhibit(pos);
   hud.showExhibit(nearest, nearest ? visited.has(nearest.project.id) : false);
-  const activeExhibits = world.update(t, dt, nearest, pos);
+  const activeExhibits = world.update(time, dt, nearest, pos);
 
   const atFactory = funhouse.nearFactory(pos) && mode !== 'tour';
   hud.prompt(atFactory && !nearest ? t('factoryPrompt') : null);
@@ -261,7 +261,7 @@ function frame() {
   hud.setLocation(world.regionAt(pos.x, pos.z));
 
   // hall of mirrors: widen and wobble the field of view while inside
-  const target = world.inMirrors(pos.x, pos.z) ? 98 + Math.sin(t * 1.7) * 8 : BASE_FOV;
+  const target = world.inMirrors(pos.x, pos.z) ? 98 + Math.sin(time * 1.7) * 8 : BASE_FOV;
   if (Math.abs(camera.fov - target) > 0.01) {
     camera.fov += (target - camera.fov) * Math.min(1, dt * 3);
     camera.updateProjectionMatrix();
