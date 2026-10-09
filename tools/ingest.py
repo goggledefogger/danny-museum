@@ -6,7 +6,7 @@ from datetime import date
 import museum as m
 
 SKIP = ("EXAMPLE", "README")
-FIELDS = ["name", "wing", "years", "role", "summary", "stack", "facts", "surprise", "link", "scale", "status"]
+FIELDS = ["name", "wing", "years", "role", "summary", "stack", "facts", "surprise", "link", "scale", "status", "people", "media"]
 
 
 def main():

@@ -19,3 +19,7 @@ data/incoming/done/*
 backups/
 *.audit.log
 mcp-audit.log
+
+# Local telemetry and media
+data/telemetry.log
+media/

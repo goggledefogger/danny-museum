@@ -55,7 +55,21 @@
       "scale": 1,
       "status": "retired",
       "added": "2026-10-07",
-      "founding": true
+      "founding": true,
+      "people": [
+        "Joe",
+        "Ben",
+        "Billy",
+        "Nick",
+        "Cyrus"
+      ],
+      "media": [
+        {
+          "type": "audio",
+          "title": "High School Reggae Jam (Session Tape)",
+          "src": "media/audio/invisible-doctor/high-school-reggae-jam.wav"
+        }
+      ]
     },
     {
       "id": "something-else",
@@ -245,7 +259,14 @@
       "scale": 1,
       "status": "quiet",
       "added": "2026-10-07",
-      "founding": true
+      "founding": true,
+      "people": [
+        "Adam",
+        "Larry",
+        "Mark",
+        "Christian",
+        "Xavier"
+      ]
     },
     {
       "id": "captains-orders",
@@ -293,7 +314,12 @@
       "scale": 1,
       "status": "quiet",
       "added": "2026-10-07",
-      "founding": true
+      "founding": true,
+      "people": [
+        "Brandon",
+        "Adam",
+        "David"
+      ]
     },
     {
       "id": "mt-hood-meadows-sound",
@@ -745,7 +771,13 @@
       "scale": 1,
       "status": "quiet",
       "added": "2026-10-07",
-      "founding": true
+      "founding": true,
+      "people": [
+        "Jeff",
+        "Ryan",
+        "Graham",
+        "John"
+      ]
     },
     {
       "id": "makahiki-challenge",

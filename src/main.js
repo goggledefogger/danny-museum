@@ -12,12 +12,14 @@ import { loadTheme, style, palette, t, applyCss, applyCopy, loadFonts } from './
 import { chooseTheme } from './picker.js';
 import { PerfMonitor } from './perf.js';
 import { GraphicsManager } from './graphics.js';
+import { initTelemetry } from './telemetry.js';
 
 const BASE_FOV = 70;
 const NEAR_EXHIBIT = 3.5;
 const STORE = 'danny-museum.visited';
 
 const loading = document.getElementById('loading');
+initTelemetry();
 
 // ---------- theme: picker (or ?theme=), then the start card ----------
 const themeId = await chooseTheme();

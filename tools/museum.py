@@ -20,14 +20,14 @@ ID_RE = re.compile(r"^[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)*$")
 # Strict limits, used by the MCP server (validate_entry(..., strict=True)).
 # The CLI tools keep the original, looser rules unless they opt in.
 TEXT_FIELDS = ["name", "wing", "years", "role", "summary", "surprise", "link", "status"]
-LIST_FIELDS = ["stack", "facts", "sources"]
+LIST_FIELDS = ["stack", "facts", "sources", "people"]
 EDITABLE_FIELDS = ["name", "wing", "years", "role", "summary", "stack", "facts", "surprise", "link",
-                   "scale", "status", "sources"]
+                   "scale", "status", "sources", "people", "media"]
 ENTRY_FIELDS = ["id"] + EDITABLE_FIELDS + ["added", "rediscovered", "founding"]
 MAX_LEN = {"id": 80, "name": 120, "wing": 20, "years": 40, "role": 200, "summary": 600, "surprise": 110,
            "link": 500, "status": 20}
-MAX_ITEM_LEN = {"facts": 300, "stack": 40, "sources": 80}
-MAX_ITEMS = {"facts": 4, "stack": 20, "sources": 10}
+MAX_ITEM_LEN = {"facts": 300, "stack": 40, "sources": 80, "people": 80}
+MAX_ITEMS = {"facts": 4, "stack": 20, "sources": 10, "people": 20, "media": 10}
 
 
 def load():
@@ -93,6 +93,13 @@ def validate_entry(p, require_added=False, strict=False):
         errs.append("stack must be a list")
     if "sources" in p and not (isinstance(p["sources"], list) and all(isinstance(x, str) for x in p["sources"])):
         errs.append("sources must be a list of strings")
+    if "people" in p and not (isinstance(p["people"], list) and all(isinstance(x, str) for x in p["people"])):
+        errs.append("people must be a list of strings")
+    if "media" in p:
+        if not isinstance(p["media"], list):
+            errs.append("media must be a list")
+        elif not all(isinstance(x, dict) for x in p["media"]):
+            errs.append("media items must be objects")
     if p.get("status") and p["status"] not in STATUSES:
         errs.append(f"status '{p['status']}' not one of {', '.join(STATUSES)}")
     if "scale" in p and p["scale"] not in (1, 2, 3):
@@ -177,6 +184,17 @@ def clean_input(entry, allowed):
                 errs.append(f"{k} must be a list of strings")
             else:
                 out[k] = [c for c in (clean_text(x) for x in v) if c]
+        elif k == "media":
+            if not isinstance(v, list) or not all(isinstance(x, dict) for x in v):
+                errs.append("media must be a list of objects")
+            else:
+                c_media = []
+                for x in v:
+                    m_item = {}
+                    for mk, mv in x.items():
+                        m_item[mk] = clean_text(mv) if isinstance(mv, str) else mv
+                    c_media.append(m_item)
+                out[k] = c_media
         else:
             if not isinstance(v, str):
                 errs.append(f"{k} must be a string")
@@ -225,6 +243,24 @@ def strict_problems(p):
                     errs.append(f"an item in {k} is {len(x)} chars (max {MAX_ITEM_LEN[k]})")
                 if any(unicodedata.category(c) == "Cc" for c in x):
                     errs.append(f"an item in {k} contains control characters")
+        elif k == "media":
+            if not isinstance(v, list) or not all(isinstance(x, dict) for x in v):
+                errs.append("media must be a list of objects")
+                continue
+            if len(v) > MAX_ITEMS["media"]:
+                errs.append(f"media has {len(v)} items (max {MAX_ITEMS['media']})")
+            for item in v:
+                m_type = item.get("type")
+                if not m_type or not isinstance(m_type, str):
+                    errs.append("media item missing type")
+                m_title = item.get("title", "")
+                if m_title and not isinstance(m_title, str):
+                    errs.append("media title must be a string")
+                for lk in ("src", "url"):
+                    if lk in item and isinstance(item[lk], str):
+                        lp = link_problem(item[lk])
+                        if lp:
+                            errs.append(f"media {lk}: {lp}")
         elif k == "scale":
             if isinstance(v, bool) or v not in (1, 2, 3):
                 errs.append("scale must be 1, 2 or 3")

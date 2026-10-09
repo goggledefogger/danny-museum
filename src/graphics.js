@@ -1,3 +1,4 @@
+import { logQualityChange } from './telemetry.js';
 // Graphics quality manager: Performance, Balanced, High.
 // Adjusts pixelRatio, culling distance, CSS blur, and particle effects on the fly.
 // Persisted in localStorage and selectable via UI or key "G".
@@ -69,6 +70,7 @@ export class GraphicsManager {
     }
 
     document.documentElement.dataset.graphics = p.id;
+    logQualityChange(p.id);
 
     // 1. Pixel Ratio
     if (this.renderer) {

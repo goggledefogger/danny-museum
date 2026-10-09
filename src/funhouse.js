@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { EYE } from './world.js';
 import { palette, props, t } from './theme.js';
 import { FACTORY_SKINS, TRAPDOOR_SKINS, glowSprite, placeProps } from './props.js';
+import { logLeverPull } from './telemetry.js';
 
 const FACTORY_POS = new THREE.Vector3(0, 0, -1);
 const TRAP_POS = new THREE.Vector3(-5.5, 0, 4.5);
@@ -59,6 +60,7 @@ export class Funhouse {
 
   pullLever() {
     if (this.factoryAnim >= 0) return;
+    logLeverPull();
     this.factoryAnim = 0;
     this.spat = false;
   }

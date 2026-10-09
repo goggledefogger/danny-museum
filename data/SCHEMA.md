@@ -13,6 +13,11 @@
       "role": "what Danny did on it",
       "summary": "1-2 sentences, plain words, what it is and why it mattered",
       "stack": ["Python", "Three.js"],
+      "people": ["Joe", "Ben", "Billy"],
+      "media": [
+        { "type": "audio", "title": "Track 1", "src": "media/audio/track1.mp3" },
+        { "type": "demo", "title": "Interactive Demo", "url": "https://example.com/demo" }
+      ],
       "facts": ["up to 4 short fun or surprising facts"],
       "surprise": "one line (max 110 chars) a funhouse machine could spit out about it",
       "link": "optional URL or local path",
@@ -26,6 +31,17 @@
 }
 
 scale: 1 small, 2 medium, 3 big/years-long.
+
+## People and Media
+
+- `people` (optional, list of strings): collaborators, teammates, or band members. Displayed as chips on the exhibit placard.
+- `media` (optional, list of objects): rich exhibit attachments.
+  - Types:
+    - `"audio"`: playable recording (`src` or `url` with `title`).
+    - `"demo"` / `"link"`: direct launcher button to live site or demo.
+    - `"video"`: video clip / recording link.
+    - `"image"`: photo or exhibit artifact.
+  - Media paths can point to web URLs or local paths (e.g. `media/audio/...`). The local development server will also resolve `/media/...` from `../danny-museum-private/media/` to keep heavy binary assets out of public version control.
 
 ## Dates and provenance
 
