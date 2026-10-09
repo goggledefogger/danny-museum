@@ -203,11 +203,12 @@ export function buildWorld(scene, data, renderer) {
   const step = exits.length > 1 ? span / (exits.length - 1) : 0;
   exits.forEach((e, i) => { e._angle = exits.length > 1 ? -span / 2 + i * step : 0; });
 
-  // Lobby wall: a ring of panels, skipping any panel that overlaps a doorway.
+  // Lobby wall: merged into a single geometry to turn 100 draw calls into 1
   const lobbyWallMat = mat({ color: P0.wall, roughness: 0.85 });
   const N = 140;
   const panelW = (2 * Math.PI * LOBBY_R) / N;
   const halfDoor = Math.asin((DOOR_W / 2) / LOBBY_R);
+  const lobbyPanels = [];
   for (let i = 0; i < N; i++) {
     const a = (i / N) * Math.PI * 2;
     const blocked = [...exits.map(e => e._angle), ACQ.angle].some(ea => {
@@ -215,11 +216,15 @@ export function buildWorld(scene, data, renderer) {
       return diff < halfDoor + (panelW / LOBBY_R) / 2;
     });
     if (blocked) continue;
-    const p = new THREE.Mesh(new THREE.BoxGeometry(panelW * 1.04, WALL_H, 0.4), lobbyWallMat);
+    const geo = new THREE.BoxGeometry(panelW * 1.04, WALL_H, 0.4);
     const d = dirOf(a);
-    p.position.set(d.x * (LOBBY_R + 0.2), WALL_H / 2, d.z * (LOBBY_R + 0.2));
-    p.rotation.y = -a;
-    lobby.add(p);
+    geo.rotateY(-a);
+    geo.translate(d.x * (LOBBY_R + 0.2), WALL_H / 2, d.z * (LOBBY_R + 0.2));
+    lobbyPanels.push(geo);
+  }
+  if (lobbyPanels.length) {
+    const mergedLobbyWall = mergeGeometries(lobbyPanels);
+    lobby.add(new THREE.Mesh(mergedLobbyWall, lobbyWallMat));
   }
   const ringTrim = new THREE.Mesh(new THREE.TorusGeometry(LOBBY_R, 0.08, 8, 160), new THREE.MeshBasicMaterial({ color: P0.trim }));
   ringTrim.rotation.x = Math.PI / 2; ringTrim.position.y = WALL_H - 0.2;
@@ -429,7 +434,9 @@ export function buildWorld(scene, data, renderer) {
       // angle plaques toward the walkway and a little back toward the entrance
       plaque.position.set(it.x, baseY + size * 0.8 + 1.0, -it.s);
       plaque.rotation.y = it.x < 0 ? Math.PI / 3 : -Math.PI / 3;
-      g.add(ped, ring, obj, plaque);
+      const exhibitRoot = new THREE.Group();
+      exhibitRoot.add(ped, ring, obj, plaque);
+      g.add(exhibitRoot);
       if (M.displayCases) {
         // glass case from the pedestal top to just under the plaque
         const top = Math.min(baseY + size + 0.25, baseY + size * 0.8 + 0.3);
@@ -439,6 +446,7 @@ export function buildWorld(scene, data, renderer) {
       const pos = toWorld(it.x, it.s);
       world.obstacles.push({ x: pos.x, z: pos.z, r: 0.95 });
       world.exhibits.push({
+        root: exhibitRoot,
         project: p, wing, pos, obj, mat: emat, plaque, baseY, size,
         objWorld: toWorld(it.x, it.s, baseY),
         // stand toward the walkway and a few steps back toward the entrance, so the
@@ -532,7 +540,7 @@ export function buildWorld(scene, data, renderer) {
 
   // ---------- per-frame life ----------
   const glowBase = style().materials.exhibitEmissive;
-  const MAX_ANIM_DIST_SQ = 45 * 45;
+  const MAX_VIS_DIST_SQ = 55 * 55;
   world.activeCount = 0;
   world.update = (t, dt, nearest, playerPos) => {
     let active = 0;
@@ -543,12 +551,19 @@ export function buildWorld(scene, data, renderer) {
       const near = e === nearest;
       const cooling = e.glow > 0.005;
 
-      if (hasPlayer && !near && !cooling) {
+      let isVis = true;
+      if (hasPlayer && !near) {
         const dx = e.pos.x - px;
         const dz = e.pos.z - pz;
-        if (dx * dx + dz * dz > MAX_ANIM_DIST_SQ) {
-          continue;
+        if (dx * dx + dz * dz > MAX_VIS_DIST_SQ) {
+          isVis = false;
         }
+      }
+
+      if (e.root) e.root.visible = isVis;
+
+      if (!isVis && !cooling) {
+        continue;
       }
 
       active++;
