@@ -568,12 +568,13 @@ export function buildWorld(scene, data, renderer) {
 
   // ---------- per-frame life ----------
   const glowBase = style().materials.exhibitEmissive;
-  const MAX_VIS_DIST_SQ = 36 * 36;
+  world.maxVisDistSq = 38 * 38;
   world.activeCount = 0;
   world.update = (t, dt, nearest, playerPos) => {
     let active = 0;
     const px = playerPos?.x, pz = playerPos?.z;
     const hasPlayer = px != null && pz != null;
+    const maxDistSq = world.maxVisDistSq || (38 * 38);
 
     for (const e of world.exhibits) {
       const near = e === nearest;
@@ -583,7 +584,7 @@ export function buildWorld(scene, data, renderer) {
       if (hasPlayer && !near) {
         const dx = e.pos.x - px;
         const dz = e.pos.z - pz;
-        if (dx * dx + dz * dz > MAX_VIS_DIST_SQ) {
+        if (dx * dx + dz * dz > maxDistSq) {
           isVis = false;
         }
       }

@@ -11,6 +11,7 @@ import { computeFresh, countSince, LAST_VISIT } from './fresh.js';
 import { loadTheme, style, palette, t, applyCss, applyCopy, loadFonts } from './theme.js';
 import { chooseTheme } from './picker.js';
 import { PerfMonitor } from './perf.js';
+import { GraphicsManager } from './graphics.js';
 
 const BASE_FOV = 70;
 const NEAR_EXHIBIT = 3.5;
@@ -68,6 +69,7 @@ const funhouse = new Funhouse(scene, world, hud);
 const acq = new Acquisitions(scene, world);
 const minimap = new Minimap(document.getElementById('minimap'), world);
 const perf = new PerfMonitor(renderer);
+const graphics = new GraphicsManager(renderer, world, acq);
 const tour = new Tour(player, world.tourPath, () => { mode = 'menu'; hud.setTour(false); hud.showOverlay(true, true); });
 
 player.teleport(world.spawn);
@@ -275,6 +277,7 @@ frame();
 // ---------- debug hooks ----------
 window.__museum = {
   perf,
+  graphics,
   start: () => { startFree(); return true; },
   teleport: id => { if (mode === 'menu') startFree(); return teleportTo(id); },
   tour: () => { startTour(); return true; },

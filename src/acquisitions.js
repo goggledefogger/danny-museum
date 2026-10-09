@@ -295,6 +295,7 @@ export class Acquisitions {
   }
 
   update(t) {
+    if (this.effectsEnabled === false) return;
     for (const tag of this.tags) {
       tag.rotation.y = t * 1.5 + tag.userData.phase;
     }
