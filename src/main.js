@@ -45,8 +45,8 @@ try {
   throw err;
 }
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
-renderer.setPixelRatio(Math.min(2, devicePixelRatio));
+const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(1.5, devicePixelRatio));
 renderer.setSize(innerWidth, innerHeight);
 renderer.toneMapping = M.toneMapping === 'none' ? THREE.NoToneMapping : THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = M.exposure;

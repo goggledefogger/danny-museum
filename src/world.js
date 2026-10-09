@@ -370,10 +370,10 @@ export function buildWorld(scene, data, renderer) {
     doorLight.position.set(0, 3.6, -(LOBBY_R - 2.2));
     g.add(doorLight);
 
-    // hall lights + end-wall sign
-    const nLights = Math.max(1, Math.round(L / 16));
+    // hall lights + end-wall sign: cap to at most 3 lights per spoke with wider radius (36) to prevent WebGL fragment shader stalls
+    const nLights = Math.min(3, Math.max(1, Math.round(L / 50)));
     for (let i = 0; i < nLights; i++) {
-      const pl = new THREE.PointLight(color.clone().lerp(new THREE.Color(P.hallLight.mix), 0.45), P.hallLight.intensity, 20, 1.6);
+      const pl = new THREE.PointLight(color.clone().lerp(new THREE.Color(P.hallLight.mix), 0.45), P.hallLight.intensity, 36, 1.4);
       pl.position.set(0, 4.6, -(s0 + (L * (i + 0.5)) / nLights));
       g.add(pl);
     }
