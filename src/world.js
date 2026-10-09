@@ -339,20 +339,48 @@ export function buildWorld(scene, data, renderer) {
     cfloor.rotation.x = -Math.PI / 2; cfloor.position.set(0, 0, -(LOBBY_R - 0.3 + connLen / 2));
     g.add(floor, runner, cfloor);
 
-    // walls: connector sides, hall start (with doorway gap), hall sides, end
+    // walls: connector sides, hall start (with doorway gap), hall sides, end - merged per spoke
     const hw = HALL_W / 2, dw = DOOR_W / 2;
     const sIn = LOBBY_R * Math.cos(halfDoor) - 0.1;
-    wall(g, -dw, -sIn, -dw, -s0, WALL_H, wallMat, trimMat);
-    wall(g, dw, -sIn, dw, -s0, WALL_H, wallMat, trimMat);
-    wall(g, -hw, -s0, -dw, -s0, WALL_H, wallMat, trimMat);
-    wall(g, dw, -s0, hw, -s0, WALL_H, wallMat, trimMat);
-    wall(g, -hw, -s0, -hw, -s1, WALL_H, wallMat, trimMat);
-    wall(g, hw, -s0, hw, -s1, WALL_H, wallMat, trimMat);
-    wall(g, -hw, -s1, hw, -s1, WALL_H, wallMat, trimMat);
-    // lintel over the connector so it reads as a corridor
-    const lintel = new THREE.Mesh(new THREE.BoxGeometry(DOOR_W + 0.3, 0.6, s0 - sIn), wallMat);
-    lintel.position.set(0, WALL_H - 0.3, -(sIn + s0) / 2);
-    g.add(lintel);
+    const segments = [
+      [-dw, -sIn, -dw, -s0],
+      [dw, -sIn, dw, -s0],
+      [-hw, -s0, -dw, -s0],
+      [dw, -s0, hw, -s0],
+      [-hw, -s0, -hw, -s1],
+      [hw, -s0, hw, -s1],
+      [-hw, -s1, hw, -s1],
+    ];
+    const spokeWallGeos = [];
+    const spokeTrimGeos = [];
+    for (const [x1, z1, x2, z2] of segments) {
+      const dx = x2 - x1, dz = z2 - z1;
+      const len = Math.hypot(dx, dz);
+      if (len < 0.01) continue;
+      const rotY = Math.atan2(-dz, dx);
+      const mx = (x1 + x2) / 2, mz = (z1 + z2) / 2;
+
+      const wg = new THREE.BoxGeometry(len, WALL_H, 0.3);
+      wg.rotateY(rotY);
+      wg.translate(mx, WALL_H / 2, mz);
+      spokeWallGeos.push(wg);
+
+      const tg1 = new THREE.BoxGeometry(len, 0.12, 0.36);
+      tg1.rotateY(rotY);
+      tg1.translate(mx, WALL_H - 0.25, mz);
+
+      const tg2 = new THREE.BoxGeometry(len, 0.12, 0.36);
+      tg2.rotateY(rotY);
+      tg2.translate(mx, 0.08, mz);
+
+      spokeTrimGeos.push(tg1, tg2);
+    }
+    const lintelGeo = new THREE.BoxGeometry(DOOR_W + 0.3, 0.6, s0 - sIn);
+    lintelGeo.translate(0, WALL_H - 0.3, -(sIn + s0) / 2);
+    spokeWallGeos.push(lintelGeo);
+
+    g.add(new THREE.Mesh(mergeGeometries(spokeWallGeos), wallMat));
+    g.add(new THREE.Mesh(mergeGeometries(spokeTrimGeos), trimMat));
 
     // the arch facing the lobby: pillars, glowing keystone band, wing name
     const pillarMat = mat({ color: P.pillar, roughness: 0.5, metalness: 0.3, emissive: color, emissiveIntensity: M.pillarGlow }, exit.id);
@@ -540,7 +568,7 @@ export function buildWorld(scene, data, renderer) {
 
   // ---------- per-frame life ----------
   const glowBase = style().materials.exhibitEmissive;
-  const MAX_VIS_DIST_SQ = 55 * 55;
+  const MAX_VIS_DIST_SQ = 36 * 36;
   world.activeCount = 0;
   world.update = (t, dt, nearest, playerPos) => {
     let active = 0;
